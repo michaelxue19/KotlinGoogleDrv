@@ -1,0 +1,184 @@
+apply plugin: 'kotlin-multiplatform'
+apply plugin: 'kotlinx-serialization'
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+
+//apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+
+buildscript {
+    repositories { jcenter() }
+
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
+        classpath("org.jetbrains.kotlin:kotlin-serialization:$kotlin_version")
+    }
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    dexOptions {
+        jumboMode true
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        //applicationId "com.example.myapp"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-debug.pro'
+            signingConfig signingConfigs.debug
+
+            buildConfigField "String", "GOOGLE_DRV_DUMP_DIR", "\"" + getGoogleDumpDir() + "\""
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-prod.pro'
+            buildConfigField "String", "GOOGLE_DRV_DUMP_DIR", "\"\""
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+def getGoogleDumpDir() {
+    def travis_commit = "$System.env.TRAVIS_COMMIT"
+    println "travis_commit:$travis_commit"
+
+    if (travis_commit != "null") {
+        return travis_commit
+    }
+    println "GOOGLE_DUMP_DIR:$System.env.GOOGLE_DUMP_DIR"
+    return "$System.env.GOOGLE_DUMP_DIR"
+}
+
+kotlin {
+    targets {
+        fromPreset(presets.android, 'android')
+
+        fromPreset(determinePreset(), 'ios') {
+            binaries {
+                framework()
+            }
+        }
+    }
+    sourceSets {
+        commonMain {
+            kotlin.srcDir('src/commonMain/kotlin')
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlin_version"
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutines_version"
+                implementation "io.ktor:ktor-client-core:$ktor_version"
+                implementation "io.ktor:ktor-client-json:$ktor_version"
+                implementation "io.ktor:ktor-client-serialization:$ktor_version"
+            }
+        }
+
+        iosMain {
+            kotlin.srcDir('src/iosMain/kotlin')
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+                implementation "io.ktor:ktor-client-ios:$ktor_version"
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutines_version"
+                implementation "io.ktor:ktor-client-core-native:$ktor_version"
+                implementation "io.ktor:ktor-client-json-native:$ktor_version"
+                implementation "io.ktor:ktor-client-serialization-native:$ktor_version"
+            }
+        }
+
+        androidMain {
+            dependencies {
+                implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+                implementation "io.ktor:ktor-client-core-jvm:$ktor_version"
+                implementation "io.ktor:ktor-client-json-jvm:$ktor_version"
+                implementation "io.ktor:ktor-client-serialization-jvm:$ktor_version"
+                implementation "io.ktor:ktor-client-okhttp:$ktor_version"
+                //implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.12.0"
+
+                // Rx
+                // implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+                // Because RxAndroid releases are few and far between, it is recommended you also
+                // explicitly depend on RxJava's latest version for bug fixes and new features.
+                implementation 'io.reactivex.rxjava2:rxjava:2.1.16'
+                implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+            }
+        }
+    }
+}
+
+// Special Gradle task that is called from Xcode.
+// Two Gradle properties must be specified for this task:
+// - tubi.configuration.name=[Release|Debug]
+// - tubi.framework.location
+task buildFrameworkForXcode {
+    if (isCalledFromXcode()) {
+        dependsOn kotlin.targets.ios.binaries.getFramework(getBuildTypeForXcode()).linkTask
+    }
+
+    doLast {
+        if (!isCalledFromXcode()) {
+            throw new Exception("Please run 'buildAppForXcode' task with all necessary properties!")
+        }
+
+        def frameworkDir = kotlin.targets.ios.binaries.getFramework(getBuildTypeForXcode()).outputFile
+
+        println("from: ${frameworkDir.parentFile}")
+        println("into: ${getXcodeConfigurationBuildDir()}")
+
+        copy {
+            from frameworkDir.parentFile
+            into getXcodeConfigurationBuildDir()
+            include "${frameworkDir.name}/**"
+            include "${frameworkDir.name}.dSYM/**"
+        }
+    }
+}
+
+// If custom preset specified in 'tubi.preset.name' property, then use it for building.
+// Otherwise build for iPhone simulator (by default).
+private def determinePreset() {
+    String presetName = project.hasProperty('tubi.preset.name') ? project.properties['tubi.preset.name'] : 'iosX64'
+    println("presetName=$presetName")
+    def preset = project.kotlin.presets[presetName]
+    println("$project has been configured for $presetName platform.")
+    preset
+}
+
+private boolean isCalledFromXcode() {
+    project.hasProperty('tubi.configuration.name') && project.hasProperty('tubi.framework.location')
+}
+
+// Only use either 'Release' or 'Debug'. We'll use 'Debug' for 'Staging' and 'AdHoc'
+private String getBuildTypeForXcode() {
+    String buildType = project.properties['tubi.configuration.name'] as String
+    buildType == 'Release' ? 'Release' : 'Debug'
+}
+
+private String getXcodeConfigurationBuildDir() {
+    project.properties['tubi.framework.location'] as String
+}
+
+configurations {
+    compileClasspath
+}

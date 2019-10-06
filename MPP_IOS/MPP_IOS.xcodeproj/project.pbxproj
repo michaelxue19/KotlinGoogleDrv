@@ -1,0 +1,3326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0212A02663188F5805CE9A98 /* Pods_MPP_IOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CDC904A9DFF854584E312A /* Pods_MPP_IOSTests.framework */; };
+		04843FF3D6699C5316669A0D /* Pods_MPP_IOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854AA2C475CEEEF182CDA2AE /* Pods_MPP_IOSUITests.framework */; };
+		58DF2F89FB93A38A48937F3F /* Pods_MPP_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CEB0E0EE73DF3CCEE640EC /* Pods_MPP_IOS.framework */; };
+		BC56307C2349AB82003DACCE /* SharedKotlin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC562E132349A8F7003DACCE /* SharedKotlin.framework */; };
+		BC56307D2349AB82003DACCE /* SharedKotlin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC562E132349A8F7003DACCE /* SharedKotlin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCFF34E72343FDCA00A41309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF34E62343FDCA00A41309 /* AppDelegate.swift */; };
+		BCFF34E92343FDCA00A41309 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF34E82343FDCA00A41309 /* SceneDelegate.swift */; };
+		BCFF34EB2343FDCA00A41309 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF34EA2343FDCA00A41309 /* ContentView.swift */; };
+		BCFF34ED2343FDCD00A41309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF34EC2343FDCD00A41309 /* Assets.xcassets */; };
+		BCFF34F02343FDCD00A41309 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFF34EF2343FDCD00A41309 /* Preview Assets.xcassets */; };
+		BCFF34F32343FDCD00A41309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFF34F12343FDCD00A41309 /* LaunchScreen.storyboard */; };
+		BCFF34FE2343FDCE00A41309 /* MPP_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF34FD2343FDCE00A41309 /* MPP_IOSTests.swift */; };
+		BCFF35092343FDCE00A41309 /* MPP_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF35082343FDCE00A41309 /* MPP_IOSUITests.swift */; };
+		BCFF353D23454A7C00A41309 /* TubiRxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF353C23454A7C00A41309 /* TubiRxSwift.swift */; };
+		BCFF353F2345A95200A41309 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF353E2345A95200A41309 /* Main.swift */; };
+		BCFF366B2345CB0500A41309 /* TubiIosPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF366A2345CB0500A41309 /* TubiIosPlatform.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCFF34FA2343FDCD00A41309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCFF34DB2343FDCA00A41309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCFF34E22343FDCA00A41309;
+			remoteInfo = MPP_IOS;
+		};
+		BCFF35052343FDCE00A41309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCFF34DB2343FDCA00A41309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCFF34E22343FDCA00A41309;
+			remoteInfo = MPP_IOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BC56307E2349AB82003DACCE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BC56307D2349AB82003DACCE /* SharedKotlin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00176471A593B84FABB1F07C /* Pods-MPP_IOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP_IOSTests.release.xcconfig"; path = "Target Support Files/Pods-MPP_IOSTests/Pods-MPP_IOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		13CEB0E0EE73DF3CCEE640EC /* Pods_MPP_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPP_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62CDB1666AC889388893A641 /* Pods-MPP_IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP_IOS.debug.xcconfig"; path = "Target Support Files/Pods-MPP_IOS/Pods-MPP_IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		854AA2C475CEEEF182CDA2AE /* Pods_MPP_IOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPP_IOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC562DEF2349A8F7003DACCE /* MPP-SharedKotlin_iosMain.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "MPP-SharedKotlin_iosMain.iml"; sourceTree = "<group>"; };
+		BC562DF02349A8F7003DACCE /* SharedKotlin_commonTest.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SharedKotlin_commonTest.iml; sourceTree = "<group>"; };
+		BC562DF12349A8F7003DACCE /* SharedKotlin.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SharedKotlin.iml; sourceTree = "<group>"; };
+		BC562DF22349A8F7003DACCE /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = text; path = build.gradle; sourceTree = "<group>"; };
+		BC562E032349A8F7003DACCE /* BuildConfig.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = BuildConfig.java; sourceTree = "<group>"; };
+		BC562E092349A8F7003DACCE /* BuildConfig.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = BuildConfig.java; sourceTree = "<group>"; };
+		BC562E122349A8F7003DACCE /* SharedKotlin.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SharedKotlin.framework.dSYM; sourceTree = "<group>"; };
+		BC562E132349A8F7003DACCE /* SharedKotlin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SharedKotlin.framework; sourceTree = "<group>"; };
+		BC562E152349A8F7003DACCE /* 5fb965de1776a9574e9e9304fc9a31aa.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = 5fb965de1776a9574e9e9304fc9a31aa.bin; sourceTree = "<group>"; };
+		BC562E182349A8F7003DACCE /* classes.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = classes.dex; sourceTree = "<group>"; };
+		BC562E192349A8F7003DACCE /* 69cabe3f8694c7814ecaa6f59d6f53bb.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = 69cabe3f8694c7814ecaa6f59d6f53bb.bin; sourceTree = "<group>"; };
+		BC562E1C2349A8F7003DACCE /* classes.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = classes.dex; sourceTree = "<group>"; };
+		BC562E1E2349A8F7003DACCE /* f63598ebc2727915f8c1541595e46038.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = f63598ebc2727915f8c1541595e46038.bin; sourceTree = "<group>"; };
+		BC562E1F2349A8F7003DACCE /* c592db79affed0d976c524d53d136f2c.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = c592db79affed0d976c524d53d136f2c.bin; sourceTree = "<group>"; };
+		BC562E222349A8F7003DACCE /* classes.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = classes.dex; sourceTree = "<group>"; };
+		BC562E242349A8F7003DACCE /* 5e3580c16db8aae41bec70d60f173fdb.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = 5e3580c16db8aae41bec70d60f173fdb.bin; sourceTree = "<group>"; };
+		BC562E252349A8F7003DACCE /* fa91d85f710a0b66ed1fa342557f17e2.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = fa91d85f710a0b66ed1fa342557f17e2.bin; sourceTree = "<group>"; };
+		BC562E282349A8F7003DACCE /* classes.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = classes.dex; sourceTree = "<group>"; };
+		BC562E292349A8F7003DACCE /* c6c9b2cd2690feee162eb4afc846df97.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = c6c9b2cd2690feee162eb4afc846df97.bin; sourceTree = "<group>"; };
+		BC562E2C2349A8F7003DACCE /* classes.dex */ = {isa = PBXFileReference; lastKnownFileType = file; path = classes.dex; sourceTree = "<group>"; };
+		BC562E2F2349A8F7003DACCE /* build-history.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "build-history.bin"; sourceTree = "<group>"; };
+		BC562E302349A8F7003DACCE /* last-build.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "last-build.bin"; sourceTree = "<group>"; };
+		BC562E332349A8F7003DACCE /* file-to-id.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.values.at"; sourceTree = "<group>"; };
+		BC562E342349A8F7003DACCE /* lookups.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.keystream.len; sourceTree = "<group>"; };
+		BC562E352349A8F7003DACCE /* file-to-id.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab"; sourceTree = "<group>"; };
+		BC562E362349A8F7003DACCE /* file-to-id.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab_i"; sourceTree = "<group>"; };
+		BC562E372349A8F7003DACCE /* file-to-id.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "file-to-id.tab.keystream"; sourceTree = "<group>"; };
+		BC562E382349A8F7003DACCE /* file-to-id.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562E392349A8F7003DACCE /* lookups.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab_i.len; sourceTree = "<group>"; };
+		BC562E3A2349A8F7003DACCE /* lookups.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab_i; sourceTree = "<group>"; };
+		BC562E3B2349A8F7003DACCE /* id-to-file.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562E3C2349A8F7003DACCE /* id-to-file.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.len"; sourceTree = "<group>"; };
+		BC562E3D2349A8F7003DACCE /* file-to-id.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.len"; sourceTree = "<group>"; };
+		BC562E3E2349A8F7003DACCE /* lookups.tab.values */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.values; sourceTree = "<group>"; };
+		BC562E3F2349A8F7003DACCE /* counters.tab */ = {isa = PBXFileReference; lastKnownFileType = text; path = counters.tab; sourceTree = "<group>"; };
+		BC562E402349A8F7003DACCE /* file-to-id.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab_i.len"; sourceTree = "<group>"; };
+		BC562E412349A8F7003DACCE /* lookups.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.keystream; sourceTree = "<group>"; };
+		BC562E422349A8F7003DACCE /* lookups.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.values.at; sourceTree = "<group>"; };
+		BC562E432349A8F7003DACCE /* id-to-file.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab"; sourceTree = "<group>"; };
+		BC562E442349A8F7003DACCE /* lookups.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab; sourceTree = "<group>"; };
+		BC562E452349A8F7003DACCE /* id-to-file.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.keystream"; sourceTree = "<group>"; };
+		BC562E462349A8F7003DACCE /* lookups.tab.values.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = lookups.tab.values.s; sourceTree = "<group>"; };
+		BC562E472349A8F7003DACCE /* id-to-file.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab_i"; sourceTree = "<group>"; };
+		BC562E482349A8F7003DACCE /* id-to-file.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab_i.len"; sourceTree = "<group>"; };
+		BC562E492349A8F7003DACCE /* lookups.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.len; sourceTree = "<group>"; };
+		BC562E4A2349A8F7003DACCE /* id-to-file.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.values.at"; sourceTree = "<group>"; };
+		BC562E4D2349A8F7003DACCE /* complementary-files.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.keystream"; sourceTree = "<group>"; };
+		BC562E4E2349A8F7003DACCE /* complementary-files.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562E4F2349A8F7003DACCE /* proto.tab.values */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.values; sourceTree = "<group>"; };
+		BC562E502349A8F7003DACCE /* constants.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab.keystream; sourceTree = "<group>"; };
+		BC562E512349A8F7003DACCE /* complementary-files.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab_i.len"; sourceTree = "<group>"; };
+		BC562E522349A8F7003DACCE /* subtypes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab_i; sourceTree = "<group>"; };
+		BC562E532349A8F7003DACCE /* source-to-classes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.len"; sourceTree = "<group>"; };
+		BC562E542349A8F7003DACCE /* class-fq-name-to-source.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab_i.len"; sourceTree = "<group>"; };
+		BC562E552349A8F7003DACCE /* class-fq-name-to-source.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.len"; sourceTree = "<group>"; };
+		BC562E562349A8F7003DACCE /* subtypes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab_i.len; sourceTree = "<group>"; };
+		BC562E572349A8F7003DACCE /* complementary-files.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab"; sourceTree = "<group>"; };
+		BC562E582349A8F7003DACCE /* complementary-files.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab_i"; sourceTree = "<group>"; };
+		BC562E592349A8F7003DACCE /* constants.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab.values.at; sourceTree = "<group>"; };
+		BC562E5A2349A8F7003DACCE /* supertypes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.len; sourceTree = "<group>"; };
+		BC562E5B2349A8F7003DACCE /* proto.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.keystream.len; sourceTree = "<group>"; };
+		BC562E5C2349A8F7003DACCE /* complementary-files.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.values.at"; sourceTree = "<group>"; };
+		BC562E5D2349A8F7003DACCE /* subtypes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.keystream.len; sourceTree = "<group>"; };
+		BC562E5E2349A8F7003DACCE /* package-parts.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab"; sourceTree = "<group>"; };
+		BC562E5F2349A8F7003DACCE /* source-to-classes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562E602349A8F7003DACCE /* internal-name-to-source.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.len"; sourceTree = "<group>"; };
+		BC562E612349A8F7003DACCE /* source-to-classes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab"; sourceTree = "<group>"; };
+		BC562E622349A8F7003DACCE /* internal-name-to-source.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "internal-name-to-source.tab.keystream"; sourceTree = "<group>"; };
+		BC562E632349A8F7003DACCE /* source-to-classes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "source-to-classes.tab.keystream"; sourceTree = "<group>"; };
+		BC562E642349A8F7003DACCE /* supertypes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab_i; sourceTree = "<group>"; };
+		BC562E652349A8F7003DACCE /* class-fq-name-to-source.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562E662349A8F7003DACCE /* source-to-classes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab_i.len"; sourceTree = "<group>"; };
+		BC562E672349A8F7003DACCE /* internal-name-to-source.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab_i"; sourceTree = "<group>"; };
+		BC562E682349A8F7003DACCE /* class-fq-name-to-source.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "class-fq-name-to-source.tab.keystream"; sourceTree = "<group>"; };
+		BC562E692349A8F7003DACCE /* internal-name-to-source.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562E6A2349A8F7003DACCE /* proto.tab.values.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = proto.tab.values.s; sourceTree = "<group>"; };
+		BC562E6B2349A8F7003DACCE /* package-parts.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab_i"; sourceTree = "<group>"; };
+		BC562E6C2349A8F7003DACCE /* internal-name-to-source.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab"; sourceTree = "<group>"; };
+		BC562E6D2349A8F7003DACCE /* internal-name-to-source.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.values.at"; sourceTree = "<group>"; };
+		BC562E6E2349A8F7003DACCE /* supertypes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab; sourceTree = "<group>"; };
+		BC562E6F2349A8F7003DACCE /* constants.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab_i.len; sourceTree = "<group>"; };
+		BC562E702349A8F7003DACCE /* constants.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab_i; sourceTree = "<group>"; };
+		BC562E712349A8F7003DACCE /* source-to-classes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.values.at"; sourceTree = "<group>"; };
+		BC562E722349A8F7003DACCE /* package-parts.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab_i.len"; sourceTree = "<group>"; };
+		BC562E732349A8F7003DACCE /* class-fq-name-to-source.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.values.at"; sourceTree = "<group>"; };
+		BC562E742349A8F7003DACCE /* source-to-classes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab_i"; sourceTree = "<group>"; };
+		BC562E752349A8F7003DACCE /* subtypes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.len; sourceTree = "<group>"; };
+		BC562E762349A8F7003DACCE /* constants.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab; sourceTree = "<group>"; };
+		BC562E772349A8F7003DACCE /* subtypes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.values.at; sourceTree = "<group>"; };
+		BC562E782349A8F7003DACCE /* internal-name-to-source.tab.values */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.values"; sourceTree = "<group>"; };
+		BC562E792349A8F7003DACCE /* internal-name-to-source.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab_i.len"; sourceTree = "<group>"; };
+		BC562E7A2349A8F7003DACCE /* constants.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab.len; sourceTree = "<group>"; };
+		BC562E7B2349A8F7003DACCE /* subtypes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab; sourceTree = "<group>"; };
+		BC562E7C2349A8F7003DACCE /* package-parts.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.values.at"; sourceTree = "<group>"; };
+		BC562E7D2349A8F7003DACCE /* subtypes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.keystream; sourceTree = "<group>"; };
+		BC562E7E2349A8F7003DACCE /* proto.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab; sourceTree = "<group>"; };
+		BC562E7F2349A8F7003DACCE /* proto.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.len; sourceTree = "<group>"; };
+		BC562E802349A8F7003DACCE /* package-parts.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.keystream"; sourceTree = "<group>"; };
+		BC562E812349A8F7003DACCE /* class-fq-name-to-source.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab"; sourceTree = "<group>"; };
+		BC562E822349A8F7003DACCE /* package-parts.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562E832349A8F7003DACCE /* proto.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = proto.tab.keystream; sourceTree = "<group>"; };
+		BC562E842349A8F7003DACCE /* constants.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab.keystream.len; sourceTree = "<group>"; };
+		BC562E852349A8F7003DACCE /* supertypes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab_i.len; sourceTree = "<group>"; };
+		BC562E862349A8F7003DACCE /* supertypes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.values.at; sourceTree = "<group>"; };
+		BC562E872349A8F7003DACCE /* internal-name-to-source.tab.values.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "internal-name-to-source.tab.values.s"; sourceTree = "<group>"; };
+		BC562E882349A8F7003DACCE /* complementary-files.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.len"; sourceTree = "<group>"; };
+		BC562E892349A8F7003DACCE /* supertypes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.keystream.len; sourceTree = "<group>"; };
+		BC562E8A2349A8F7003DACCE /* class-fq-name-to-source.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab_i"; sourceTree = "<group>"; };
+		BC562E8B2349A8F7003DACCE /* proto.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab_i.len; sourceTree = "<group>"; };
+		BC562E8C2349A8F7003DACCE /* proto.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.values.at; sourceTree = "<group>"; };
+		BC562E8D2349A8F7003DACCE /* proto.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab_i; sourceTree = "<group>"; };
+		BC562E8E2349A8F7003DACCE /* package-parts.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.len"; sourceTree = "<group>"; };
+		BC562E8F2349A8F7003DACCE /* supertypes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.keystream; sourceTree = "<group>"; };
+		BC562E912349A8F8003DACCE /* source-to-output.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab_i"; sourceTree = "<group>"; };
+		BC562E922349A8F8003DACCE /* source-to-output.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562E932349A8F8003DACCE /* source-to-output.tab.values */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.values"; sourceTree = "<group>"; };
+		BC562E942349A8F8003DACCE /* source-to-output.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab"; sourceTree = "<group>"; };
+		BC562E952349A8F8003DACCE /* source-to-output.tab.values.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "source-to-output.tab.values.s"; sourceTree = "<group>"; };
+		BC562E962349A8F8003DACCE /* source-to-output.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab_i.len"; sourceTree = "<group>"; };
+		BC562E972349A8F8003DACCE /* source-to-output.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "source-to-output.tab.keystream"; sourceTree = "<group>"; };
+		BC562E982349A8F8003DACCE /* source-to-output.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.len"; sourceTree = "<group>"; };
+		BC562E992349A8F8003DACCE /* source-to-output.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.values.at"; sourceTree = "<group>"; };
+		BC562E9B2349A8F8003DACCE /* build-history.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "build-history.bin"; sourceTree = "<group>"; };
+		BC562E9C2349A8F8003DACCE /* last-build.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "last-build.bin"; sourceTree = "<group>"; };
+		BC562E9F2349A8F8003DACCE /* file-to-id.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.values.at"; sourceTree = "<group>"; };
+		BC562EA02349A8F8003DACCE /* lookups.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.keystream.len; sourceTree = "<group>"; };
+		BC562EA12349A8F8003DACCE /* file-to-id.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab"; sourceTree = "<group>"; };
+		BC562EA22349A8F8003DACCE /* file-to-id.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab_i"; sourceTree = "<group>"; };
+		BC562EA32349A8F8003DACCE /* file-to-id.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "file-to-id.tab.keystream"; sourceTree = "<group>"; };
+		BC562EA42349A8F8003DACCE /* file-to-id.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562EA52349A8F8003DACCE /* lookups.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab_i.len; sourceTree = "<group>"; };
+		BC562EA62349A8F8003DACCE /* lookups.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab_i; sourceTree = "<group>"; };
+		BC562EA72349A8F8003DACCE /* id-to-file.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562EA82349A8F8003DACCE /* id-to-file.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.len"; sourceTree = "<group>"; };
+		BC562EA92349A8F8003DACCE /* file-to-id.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab.len"; sourceTree = "<group>"; };
+		BC562EAA2349A8F8003DACCE /* counters.tab */ = {isa = PBXFileReference; lastKnownFileType = text; path = counters.tab; sourceTree = "<group>"; };
+		BC562EAB2349A8F8003DACCE /* file-to-id.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "file-to-id.tab_i.len"; sourceTree = "<group>"; };
+		BC562EAC2349A8F8003DACCE /* lookups.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.keystream; sourceTree = "<group>"; };
+		BC562EAD2349A8F8003DACCE /* lookups.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.values.at; sourceTree = "<group>"; };
+		BC562EAE2349A8F8003DACCE /* id-to-file.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab"; sourceTree = "<group>"; };
+		BC562EAF2349A8F8003DACCE /* lookups.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab; sourceTree = "<group>"; };
+		BC562EB02349A8F8003DACCE /* id-to-file.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.keystream"; sourceTree = "<group>"; };
+		BC562EB12349A8F8003DACCE /* id-to-file.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab_i"; sourceTree = "<group>"; };
+		BC562EB22349A8F8003DACCE /* id-to-file.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab_i.len"; sourceTree = "<group>"; };
+		BC562EB32349A8F8003DACCE /* lookups.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = lookups.tab.len; sourceTree = "<group>"; };
+		BC562EB42349A8F8003DACCE /* id-to-file.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "id-to-file.tab.values.at"; sourceTree = "<group>"; };
+		BC562EB72349A8F8003DACCE /* complementary-files.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.keystream"; sourceTree = "<group>"; };
+		BC562EB82349A8F8003DACCE /* complementary-files.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562EB92349A8F8003DACCE /* constants.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab.keystream; sourceTree = "<group>"; };
+		BC562EBA2349A8F8003DACCE /* complementary-files.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab_i.len"; sourceTree = "<group>"; };
+		BC562EBB2349A8F8003DACCE /* subtypes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab_i; sourceTree = "<group>"; };
+		BC562EBC2349A8F8003DACCE /* source-to-classes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.len"; sourceTree = "<group>"; };
+		BC562EBD2349A8F8003DACCE /* class-fq-name-to-source.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab_i.len"; sourceTree = "<group>"; };
+		BC562EBE2349A8F8003DACCE /* class-fq-name-to-source.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.len"; sourceTree = "<group>"; };
+		BC562EBF2349A8F8003DACCE /* subtypes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab_i.len; sourceTree = "<group>"; };
+		BC562EC02349A8F8003DACCE /* complementary-files.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab"; sourceTree = "<group>"; };
+		BC562EC12349A8F8003DACCE /* complementary-files.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab_i"; sourceTree = "<group>"; };
+		BC562EC22349A8F8003DACCE /* constants.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab.values.at; sourceTree = "<group>"; };
+		BC562EC32349A8F8003DACCE /* supertypes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.len; sourceTree = "<group>"; };
+		BC562EC42349A8F8003DACCE /* proto.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.keystream.len; sourceTree = "<group>"; };
+		BC562EC52349A8F8003DACCE /* complementary-files.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.values.at"; sourceTree = "<group>"; };
+		BC562EC62349A8F8003DACCE /* subtypes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.keystream.len; sourceTree = "<group>"; };
+		BC562EC72349A8F8003DACCE /* package-parts.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab"; sourceTree = "<group>"; };
+		BC562EC82349A8F8003DACCE /* source-to-classes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562EC92349A8F8003DACCE /* internal-name-to-source.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.len"; sourceTree = "<group>"; };
+		BC562ECA2349A8F8003DACCE /* source-to-classes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab"; sourceTree = "<group>"; };
+		BC562ECB2349A8F8003DACCE /* internal-name-to-source.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "internal-name-to-source.tab.keystream"; sourceTree = "<group>"; };
+		BC562ECC2349A8F8003DACCE /* source-to-classes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "source-to-classes.tab.keystream"; sourceTree = "<group>"; };
+		BC562ECD2349A8F8003DACCE /* supertypes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab_i; sourceTree = "<group>"; };
+		BC562ECE2349A8F8003DACCE /* class-fq-name-to-source.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562ECF2349A8F8003DACCE /* source-to-classes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab_i.len"; sourceTree = "<group>"; };
+		BC562ED02349A8F8003DACCE /* internal-name-to-source.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab_i"; sourceTree = "<group>"; };
+		BC562ED12349A8F8003DACCE /* class-fq-name-to-source.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "class-fq-name-to-source.tab.keystream"; sourceTree = "<group>"; };
+		BC562ED22349A8F8003DACCE /* internal-name-to-source.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562ED32349A8F8003DACCE /* package-parts.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab_i"; sourceTree = "<group>"; };
+		BC562ED42349A8F8003DACCE /* internal-name-to-source.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab"; sourceTree = "<group>"; };
+		BC562ED52349A8F8003DACCE /* internal-name-to-source.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab.values.at"; sourceTree = "<group>"; };
+		BC562ED62349A8F8003DACCE /* supertypes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab; sourceTree = "<group>"; };
+		BC562ED72349A8F8003DACCE /* constants.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab_i.len; sourceTree = "<group>"; };
+		BC562ED82349A8F8003DACCE /* constants.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab_i; sourceTree = "<group>"; };
+		BC562ED92349A8F8003DACCE /* source-to-classes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab.values.at"; sourceTree = "<group>"; };
+		BC562EDA2349A8F8003DACCE /* package-parts.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab_i.len"; sourceTree = "<group>"; };
+		BC562EDB2349A8F8003DACCE /* class-fq-name-to-source.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab.values.at"; sourceTree = "<group>"; };
+		BC562EDC2349A8F8003DACCE /* source-to-classes.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-classes.tab_i"; sourceTree = "<group>"; };
+		BC562EDD2349A8F8003DACCE /* subtypes.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.len; sourceTree = "<group>"; };
+		BC562EDE2349A8F8003DACCE /* constants.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab; sourceTree = "<group>"; };
+		BC562EDF2349A8F8003DACCE /* subtypes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.values.at; sourceTree = "<group>"; };
+		BC562EE02349A8F8003DACCE /* internal-name-to-source.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "internal-name-to-source.tab_i.len"; sourceTree = "<group>"; };
+		BC562EE12349A8F8003DACCE /* constants.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab.len; sourceTree = "<group>"; };
+		BC562EE22349A8F8003DACCE /* subtypes.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab; sourceTree = "<group>"; };
+		BC562EE32349A8F8003DACCE /* package-parts.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.values.at"; sourceTree = "<group>"; };
+		BC562EE42349A8F8003DACCE /* subtypes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = subtypes.tab.keystream; sourceTree = "<group>"; };
+		BC562EE52349A8F8003DACCE /* proto.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab; sourceTree = "<group>"; };
+		BC562EE62349A8F8003DACCE /* proto.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.len; sourceTree = "<group>"; };
+		BC562EE72349A8F8003DACCE /* package-parts.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.keystream"; sourceTree = "<group>"; };
+		BC562EE82349A8F8003DACCE /* class-fq-name-to-source.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab"; sourceTree = "<group>"; };
+		BC562EE92349A8F8003DACCE /* package-parts.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562EEA2349A8F8003DACCE /* proto.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = proto.tab.keystream; sourceTree = "<group>"; };
+		BC562EEB2349A8F8003DACCE /* constants.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = constants.tab.keystream.len; sourceTree = "<group>"; };
+		BC562EEC2349A8F8003DACCE /* supertypes.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab_i.len; sourceTree = "<group>"; };
+		BC562EED2349A8F8003DACCE /* supertypes.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.values.at; sourceTree = "<group>"; };
+		BC562EEE2349A8F8003DACCE /* complementary-files.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "complementary-files.tab.len"; sourceTree = "<group>"; };
+		BC562EEF2349A8F8003DACCE /* supertypes.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.keystream.len; sourceTree = "<group>"; };
+		BC562EF02349A8F8003DACCE /* class-fq-name-to-source.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "class-fq-name-to-source.tab_i"; sourceTree = "<group>"; };
+		BC562EF12349A8F8003DACCE /* proto.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab_i.len; sourceTree = "<group>"; };
+		BC562EF22349A8F8003DACCE /* proto.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab.values.at; sourceTree = "<group>"; };
+		BC562EF32349A8F8003DACCE /* proto.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = proto.tab_i; sourceTree = "<group>"; };
+		BC562EF42349A8F8003DACCE /* package-parts.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "package-parts.tab.len"; sourceTree = "<group>"; };
+		BC562EF52349A8F8003DACCE /* supertypes.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = file; path = supertypes.tab.keystream; sourceTree = "<group>"; };
+		BC562EF72349A8F8003DACCE /* source-to-output.tab_i */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab_i"; sourceTree = "<group>"; };
+		BC562EF82349A8F8003DACCE /* source-to-output.tab.keystream.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.keystream.len"; sourceTree = "<group>"; };
+		BC562EF92349A8F8003DACCE /* source-to-output.tab */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab"; sourceTree = "<group>"; };
+		BC562EFA2349A8F8003DACCE /* source-to-output.tab_i.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab_i.len"; sourceTree = "<group>"; };
+		BC562EFB2349A8F8003DACCE /* source-to-output.tab.keystream */ = {isa = PBXFileReference; lastKnownFileType = text; path = "source-to-output.tab.keystream"; sourceTree = "<group>"; };
+		BC562EFC2349A8F8003DACCE /* source-to-output.tab.len */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.len"; sourceTree = "<group>"; };
+		BC562EFD2349A8F8003DACCE /* source-to-output.tab.values.at */ = {isa = PBXFileReference; lastKnownFileType = file; path = "source-to-output.tab.values.at"; sourceTree = "<group>"; };
+		BC562F022349A8F8003DACCE /* package-aware-r.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "package-aware-r.txt"; sourceTree = "<group>"; };
+		BC562F042349A8F8003DACCE /* package-aware-r.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "package-aware-r.txt"; sourceTree = "<group>"; };
+		BC562F0B2349A8F8003DACCE /* google_drive_credential.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = google_drive_credential.txt; sourceTree = "<group>"; };
+		BC562F0F2349A8F8003DACCE /* full.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = full.jar; sourceTree = "<group>"; };
+		BC562F122349A8F8003DACCE /* output.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
+		BC562F142349A8F8003DACCE /* output.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
+		BC562F172349A8F8003DACCE /* annotationProcessors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annotationProcessors.json; sourceTree = "<group>"; };
+		BC562F192349A8F8003DACCE /* annotationProcessors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annotationProcessors.json; sourceTree = "<group>"; };
+		BC562F1C2349A8F8003DACCE /* merger.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = merger.xml; sourceTree = "<group>"; };
+		BC562F1F2349A8F8003DACCE /* merge-state */ = {isa = PBXFileReference; lastKnownFileType = file; path = "merge-state"; sourceTree = "<group>"; };
+		BC562F212349A8F8003DACCE /* compile-file-map.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "compile-file-map.properties"; sourceTree = "<group>"; };
+		BC562F242349A8F8003DACCE /* merger.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = merger.xml; sourceTree = "<group>"; };
+		BC562F262349A8F8003DACCE /* compile-file-map.properties */ = {isa = PBXFileReference; lastKnownFileType = text; path = "compile-file-map.properties"; sourceTree = "<group>"; };
+		BC562F292349A8F8003DACCE /* merger.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = merger.xml; sourceTree = "<group>"; };
+		BC562F2B2349A8F8003DACCE /* merger.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = merger.xml; sourceTree = "<group>"; };
+		BC562F2D2349A8F8003DACCE /* merger.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = merger.xml; sourceTree = "<group>"; };
+		BC562F312349A8F8003DACCE /* R-def.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "R-def.txt"; sourceTree = "<group>"; };
+		BC562F342349A8F8003DACCE /* R-def.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "R-def.txt"; sourceTree = "<group>"; };
+		BC562F382349A8F8003DACCE /* output.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
+		BC562F392349A8F8003DACCE /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		BC562F3C2349A8F8003DACCE /* output.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = output.json; sourceTree = "<group>"; };
+		BC562F3D2349A8F8003DACCE /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		BC562F402349A8F8003DACCE /* classes.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = classes.jar; sourceTree = "<group>"; };
+		BC562F432349A8F8003DACCE /* res.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = res.jar; sourceTree = "<group>"; };
+		BC562F452349A8F8003DACCE /* proguard-defaults.txt-3.5.0 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "proguard-defaults.txt-3.5.0"; sourceTree = "<group>"; };
+		BC562F462349A8F8003DACCE /* proguard-android.txt-3.5.0 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "proguard-android.txt-3.5.0"; sourceTree = "<group>"; };
+		BC562F472349A8F8003DACCE /* proguard-android.txt-3.5.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "proguard-android.txt-3.5.1"; sourceTree = "<group>"; };
+		BC562F482349A8F8003DACCE /* proguard-defaults.txt-3.5.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "proguard-defaults.txt-3.5.1"; sourceTree = "<group>"; };
+		BC562F492349A8F8003DACCE /* proguard-android-optimize.txt-3.5.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "proguard-android-optimize.txt-3.5.1"; sourceTree = "<group>"; };
+		BC562F4A2349A8F8003DACCE /* proguard-android-optimize.txt-3.5.0 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "proguard-android-optimize.txt-3.5.0"; sourceTree = "<group>"; };
+		BC562F552349A8F8003DACCE /* BuildConfig.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = BuildConfig.class; sourceTree = "<group>"; };
+		BC562F5C2349A8F8003DACCE /* BuildConfig.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = BuildConfig.class; sourceTree = "<group>"; };
+		BC562F632349A8F8003DACCE /* classes.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = classes.jar; sourceTree = "<group>"; };
+		BC562F652349A8F8003DACCE /* classes.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = classes.jar; sourceTree = "<group>"; };
+		BC562F682349A8F8003DACCE /* manifest-merger-blame-release-report.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manifest-merger-blame-release-report.txt"; sourceTree = "<group>"; };
+		BC562F6A2349A8F8003DACCE /* manifest-merger-blame-debug-report.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manifest-merger-blame-debug-report.txt"; sourceTree = "<group>"; };
+		BC562F702349A8F8003DACCE /* R.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = R.jar; sourceTree = "<group>"; };
+		BC562F722349A8F8003DACCE /* R.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = R.jar; sourceTree = "<group>"; };
+		BC562F752349A8F8003DACCE /* R.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = R.txt; sourceTree = "<group>"; };
+		BC562F772349A8F8003DACCE /* R.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = R.txt; sourceTree = "<group>"; };
+		BC562F7A2349A8F8003DACCE /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		BC562F7C2349A8F8003DACCE /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		BC562F982349A8F8003DACCE /* SharedKotlin_release.kotlin_module */ = {isa = PBXFileReference; lastKnownFileType = file; path = SharedKotlin_release.kotlin_module; sourceTree = "<group>"; };
+		BC562F9D2349A8F8003DACCE /* Waterfall$readQueue$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$readQueue$1.class; sourceTree = "<group>"; };
+		BC562F9E2349A8F8003DACCE /* AtomicInteger.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AtomicInteger.class; sourceTree = "<group>"; };
+		BC562F9F2349A8F8003DACCE /* JWTHeader.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTHeader.class; sourceTree = "<group>"; };
+		BC562FA02349A8F8003DACCE /* Waterfall$start$3.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$start$3.class; sourceTree = "<group>"; };
+		BC562FA12349A8F8003DACCE /* RainBarrel$onDriveServiceReady$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel$onDriveServiceReady$1.class; sourceTree = "<group>"; };
+		BC562FA22349A8F8003DACCE /* GoogleDrvImpl$listFiles$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$listFiles$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC562FA32349A8F8003DACCE /* Waterfall$dumpToGoogleDrive$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$dumpToGoogleDrive$1.class; sourceTree = "<group>"; };
+		BC562FA42349A8F8003DACCE /* UploadResponse$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = UploadResponse$Companion.class; sourceTree = "<group>"; };
+		BC562FA52349A8F8003DACCE /* GoogleDrive$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrive$Companion.class; sourceTree = "<group>"; };
+		BC562FA62349A8F8003DACCE /* GoogleDrive$createOneDir$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrive$createOneDir$1.class; sourceTree = "<group>"; };
+		BC562FA72349A8F8003DACCE /* FixedBlockingQueue$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = FixedBlockingQueue$Companion.class; sourceTree = "<group>"; };
+		BC562FA82349A8F8003DACCE /* RainBarrel$start$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel$start$2.class; sourceTree = "<group>"; };
+		BC562FA92349A8F8003DACCE /* DispatcherKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DispatcherKt.class; sourceTree = "<group>"; };
+		BC562FAA2349A8F8003DACCE /* Waterfall$switchMapDeferreds$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$switchMapDeferreds$1.class; sourceTree = "<group>"; };
+		BC562FAB2349A8F8003DACCE /* RainBarrel$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel$Companion.class; sourceTree = "<group>"; };
+		BC562FAC2349A8F8003DACCE /* ListResponse$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ListResponse$$serializer.class; sourceTree = "<group>"; };
+		BC562FAD2349A8F8003DACCE /* GoogleDrvApi$createOneDir$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$createOneDir$1.class; sourceTree = "<group>"; };
+		BC562FAE2349A8F8003DACCE /* GoogleOAuth$prepareAccessToken$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$prepareAccessToken$1.class; sourceTree = "<group>"; };
+		BC562FAF2349A8F8003DACCE /* UploadResponse.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = UploadResponse.class; sourceTree = "<group>"; };
+		BC562FB02349A8F8003DACCE /* GoogleOAuth$httpClient$1$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$httpClient$1$1.class; sourceTree = "<group>"; };
+		BC562FB12349A8F8003DACCE /* CreateResponse.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CreateResponse.class; sourceTree = "<group>"; };
+		BC562FB22349A8F8003DACCE /* RxWrapper.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RxWrapper.class; sourceTree = "<group>"; };
+		BC562FB32349A8F8003DACCE /* Waterfall$start$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$start$2.class; sourceTree = "<group>"; };
+		BC562FB42349A8F8003DACCE /* AccessToken.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AccessToken.class; sourceTree = "<group>"; };
+		BC562FB52349A8F8003DACCE /* GoogleOAuth$postAuthRequest$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$postAuthRequest$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC562FB62349A8F8003DACCE /* GoogleDrvImpl$createFolder$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$createFolder$1.class; sourceTree = "<group>"; };
+		BC562FB72349A8F8003DACCE /* GoogleDrvImpl$rename$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$rename$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC562FB82349A8F8003DACCE /* RainBarrel$onDriveServiceReady$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel$onDriveServiceReady$2.class; sourceTree = "<group>"; };
+		BC562FB92349A8F8003DACCE /* AndroidPlatformKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AndroidPlatformKt.class; sourceTree = "<group>"; };
+		BC562FBA2349A8F8003DACCE /* RainBarrel$start$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel$start$1.class; sourceTree = "<group>"; };
+		BC562FBB2349A8F8003DACCE /* GoogleDrvImpl$rename$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$rename$1.class; sourceTree = "<group>"; };
+		BC562FBC2349A8F8003DACCE /* DrvFile$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrvFile$Companion.class; sourceTree = "<group>"; };
+		BC562FBD2349A8F8003DACCE /* GoogleDrive.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrive.class; sourceTree = "<group>"; };
+		BC562FBE2349A8F8003DACCE /* ListResponse.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ListResponse.class; sourceTree = "<group>"; };
+		BC562FBF2349A8F8003DACCE /* JWTClaims$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTClaims$$serializer.class; sourceTree = "<group>"; };
+		BC562FC02349A8F8003DACCE /* AuthAssertion$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AuthAssertion$Companion.class; sourceTree = "<group>"; };
+		BC562FC12349A8F8003DACCE /* GoogleDrvImpl$uploadFile$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$uploadFile$1.class; sourceTree = "<group>"; };
+		BC562FC22349A8F8003DACCE /* GoogleDrvApi$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$Companion.class; sourceTree = "<group>"; };
+		BC562FC32349A8F8003DACCE /* GoogleDrvImpl.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl.class; sourceTree = "<group>"; };
+		BC562FC42349A8F8003DACCE /* GoogleDrvApi.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi.class; sourceTree = "<group>"; };
+		BC562FC52349A8F8003DACCE /* Waterfall.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall.class; sourceTree = "<group>"; };
+		BC562FC62349A8F8003DACCE /* GoogleDrvImpl$uploadFile$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$uploadFile$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC562FC72349A8F8003DACCE /* GoogleOAuth.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth.class; sourceTree = "<group>"; };
+		BC562FC82349A8F8003DACCE /* UploadResponse$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = UploadResponse$$serializer.class; sourceTree = "<group>"; };
+		BC562FC92349A8F8003DACCE /* GoogleDrvImpl$deleteFile$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$deleteFile$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC562FCA2349A8F8003DACCE /* RainBarrel$SendBuffer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel$SendBuffer.class; sourceTree = "<group>"; };
+		BC562FCB2349A8F8003DACCE /* GoogleDrvImpl$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$Companion.class; sourceTree = "<group>"; };
+		BC562FCC2349A8F8003DACCE /* JWTClaims.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTClaims.class; sourceTree = "<group>"; };
+		BC562FCD2349A8F8003DACCE /* GoogleDrvImpl$httpClient$1$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$httpClient$1$1.class; sourceTree = "<group>"; };
+		BC562FCE2349A8F8003DACCE /* GoogleDrvImpl$httpClient$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$httpClient$1.class; sourceTree = "<group>"; };
+		BC562FCF2349A8F8003DACCE /* JWTHeader$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTHeader$$serializer.class; sourceTree = "<group>"; };
+		BC562FD02349A8F8003DACCE /* RainBarrel.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel.class; sourceTree = "<group>"; };
+		BC562FD12349A8F8003DACCE /* Waterfall$switchMapDeferreds$$inlined$select$lambda$2$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$switchMapDeferreds$$inlined$select$lambda$2$1.class; sourceTree = "<group>"; };
+		BC562FD22349A8F8003DACCE /* GoogleDrvImpl$deleteFile$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$deleteFile$1.class; sourceTree = "<group>"; };
+		BC562FD32349A8F8003DACCE /* AccessToken$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AccessToken$Companion.class; sourceTree = "<group>"; };
+		BC562FD42349A8F8003DACCE /* AuthAssertion$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AuthAssertion$$serializer.class; sourceTree = "<group>"; };
+		BC562FD52349A8F8003DACCE /* GoogleDrvApi$renameCloudFile$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$renameCloudFile$1.class; sourceTree = "<group>"; };
+		BC562FD62349A8F8003DACCE /* Waterfall$switchMapDeferreds$$inlined$select$lambda$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$switchMapDeferreds$$inlined$select$lambda$2.class; sourceTree = "<group>"; };
+		BC562FD72349A8F8003DACCE /* GoogleOAuth$postAuthRequest$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$postAuthRequest$1.class; sourceTree = "<group>"; };
+		BC562FD82349A8F8003DACCE /* JWTClaims$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTClaims$Companion.class; sourceTree = "<group>"; };
+		BC562FD92349A8F8003DACCE /* RainBarrel$mDriveServiceObservable$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel$mDriveServiceObservable$1.class; sourceTree = "<group>"; };
+		BC562FDA2349A8F8003DACCE /* GoogleDrvImpl$createFolder$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$createFolder$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC562FDB2349A8F8003DACCE /* ListResponse$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ListResponse$Companion.class; sourceTree = "<group>"; };
+		BC562FDC2349A8F8003DACCE /* CreateResponse$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CreateResponse$Companion.class; sourceTree = "<group>"; };
+		BC562FDD2349A8F8003DACCE /* JWTHeader$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTHeader$Companion.class; sourceTree = "<group>"; };
+		BC562FDE2349A8F8003DACCE /* GoogleDrvApi$renameCloudFile$1$renameTask$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$renameCloudFile$1$renameTask$1.class; sourceTree = "<group>"; };
+		BC562FDF2349A8F8003DACCE /* RxWrapperKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RxWrapperKt.class; sourceTree = "<group>"; };
+		BC562FE02349A8F8003DACCE /* GoogleDrvApi$uploadToCloud$1$uploadTask$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$uploadToCloud$1$uploadTask$1.class; sourceTree = "<group>"; };
+		BC562FE12349A8F8003DACCE /* GoogleOAuth$httpClient$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$httpClient$1.class; sourceTree = "<group>"; };
+		BC562FE22349A8F8003DACCE /* GoogleDrvApi$uploadToCloud$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$uploadToCloud$1.class; sourceTree = "<group>"; };
+		BC562FE32349A8F8003DACCE /* PlatformUtilsKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = PlatformUtilsKt.class; sourceTree = "<group>"; };
+		BC562FE42349A8F8003DACCE /* CreateResponse$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CreateResponse$$serializer.class; sourceTree = "<group>"; };
+		BC562FE52349A8F8003DACCE /* AccessToken$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AccessToken$$serializer.class; sourceTree = "<group>"; };
+		BC562FE62349A8F8003DACCE /* Waterfall$switchMapDeferreds$$inlined$select$lambda$2$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$switchMapDeferreds$$inlined$select$lambda$2$2.class; sourceTree = "<group>"; };
+		BC562FE72349A8F8003DACCE /* DrvFile$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrvFile$$serializer.class; sourceTree = "<group>"; };
+		BC562FE82349A8F8003DACCE /* RainBarrel$readQueue$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RainBarrel$readQueue$1.class; sourceTree = "<group>"; };
+		BC562FE92349A8F8003DACCE /* GoogleDrive$uploadToCloud$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrive$uploadToCloud$1.class; sourceTree = "<group>"; };
+		BC562FEA2349A8F8003DACCE /* GoogleDrvImpl$listFiles$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$listFiles$1.class; sourceTree = "<group>"; };
+		BC562FEB2349A8F8003DACCE /* FixedBlockingQueue.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = FixedBlockingQueue.class; sourceTree = "<group>"; };
+		BC562FEC2349A8F8003DACCE /* GoogleDrvApi$createOneDir$1$createJob$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$createOneDir$1$createJob$1.class; sourceTree = "<group>"; };
+		BC562FED2349A8F8003DACCE /* Waterfall$switchMapDeferreds$$inlined$select$lambda$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$switchMapDeferreds$$inlined$select$lambda$1.class; sourceTree = "<group>"; };
+		BC562FEE2349A8F8003DACCE /* GoogleDrvApi$createOneDir$1$deleteJob$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$createOneDir$1$deleteJob$1.class; sourceTree = "<group>"; };
+		BC562FEF2349A8F8003DACCE /* GoogleDrvImpl$deleteFiles$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$deleteFiles$1.class; sourceTree = "<group>"; };
+		BC562FF02349A8F8003DACCE /* GoogleOAuth$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$Companion.class; sourceTree = "<group>"; };
+		BC562FF12349A8F8003DACCE /* AuthAssertion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AuthAssertion.class; sourceTree = "<group>"; };
+		BC562FF22349A8F8003DACCE /* GoogleDrvImplKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImplKt.class; sourceTree = "<group>"; };
+		BC562FF32349A8F8003DACCE /* DrvFile.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrvFile.class; sourceTree = "<group>"; };
+		BC562FF62349A8F8003DACCE /* SharedKotlin_debug.kotlin_module */ = {isa = PBXFileReference; lastKnownFileType = file; path = SharedKotlin_debug.kotlin_module; sourceTree = "<group>"; };
+		BC562FFB2349A8F8003DACCE /* JWTHeader.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTHeader.class; sourceTree = "<group>"; };
+		BC562FFC2349A8F8003DACCE /* Waterfall$start$3.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$start$3.class; sourceTree = "<group>"; };
+		BC562FFD2349A8F8003DACCE /* GoogleDrvImpl$listFiles$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$listFiles$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC562FFE2349A8F8003DACCE /* Waterfall$dumpToGoogleDrive$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$dumpToGoogleDrive$1.class; sourceTree = "<group>"; };
+		BC562FFF2349A8F8003DACCE /* UploadResponse$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = UploadResponse$Companion.class; sourceTree = "<group>"; };
+		BC5630002349A8F8003DACCE /* GoogleDrive$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrive$Companion.class; sourceTree = "<group>"; };
+		BC5630012349A8F8003DACCE /* GoogleDrive$createOneDir$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrive$createOneDir$1.class; sourceTree = "<group>"; };
+		BC5630022349A8F8003DACCE /* DispatcherKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DispatcherKt.class; sourceTree = "<group>"; };
+		BC5630032349A8F8003DACCE /* ListResponse$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ListResponse$$serializer.class; sourceTree = "<group>"; };
+		BC5630042349A8F8003DACCE /* GoogleDrvApi$createOneDir$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$createOneDir$1.class; sourceTree = "<group>"; };
+		BC5630052349A8F8003DACCE /* GoogleOAuth$prepareAccessToken$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$prepareAccessToken$1.class; sourceTree = "<group>"; };
+		BC5630062349A8F8003DACCE /* UploadResponse.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = UploadResponse.class; sourceTree = "<group>"; };
+		BC5630072349A8F8003DACCE /* GoogleOAuth$httpClient$1$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$httpClient$1$1.class; sourceTree = "<group>"; };
+		BC5630082349A8F8003DACCE /* CreateResponse.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CreateResponse.class; sourceTree = "<group>"; };
+		BC5630092349A8F8003DACCE /* RxWrapper.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RxWrapper.class; sourceTree = "<group>"; };
+		BC56300A2349A8F8003DACCE /* Waterfall$start$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$start$2.class; sourceTree = "<group>"; };
+		BC56300B2349A8F8003DACCE /* Waterfall$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$Companion.class; sourceTree = "<group>"; };
+		BC56300C2349A8F8003DACCE /* AccessToken.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AccessToken.class; sourceTree = "<group>"; };
+		BC56300D2349A8F8003DACCE /* GoogleOAuth$postAuthRequest$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$postAuthRequest$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC56300E2349A8F8003DACCE /* GoogleDrvImpl$createFolder$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$createFolder$1.class; sourceTree = "<group>"; };
+		BC56300F2349A8F8003DACCE /* Waterfall$$special$$inlined$CoroutineExceptionHandler$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$$special$$inlined$CoroutineExceptionHandler$1.class; sourceTree = "<group>"; };
+		BC5630102349A8F8003DACCE /* GoogleDrvImpl$rename$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$rename$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC5630112349A8F8003DACCE /* WaterfallEntry$start$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = WaterfallEntry$start$1.class; sourceTree = "<group>"; };
+		BC5630122349A8F8003DACCE /* AndroidPlatformKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AndroidPlatformKt.class; sourceTree = "<group>"; };
+		BC5630132349A8F8003DACCE /* GoogleDrvImpl$rename$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$rename$1.class; sourceTree = "<group>"; };
+		BC5630142349A8F8003DACCE /* DrvFile$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrvFile$Companion.class; sourceTree = "<group>"; };
+		BC5630152349A8F8003DACCE /* GoogleDrive.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrive.class; sourceTree = "<group>"; };
+		BC5630162349A8F8003DACCE /* ListResponse.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ListResponse.class; sourceTree = "<group>"; };
+		BC5630172349A8F8003DACCE /* JWTClaims$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTClaims$$serializer.class; sourceTree = "<group>"; };
+		BC5630182349A8F8003DACCE /* AuthAssertion$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AuthAssertion$Companion.class; sourceTree = "<group>"; };
+		BC5630192349A8F8003DACCE /* GoogleDrvImpl$uploadFile$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$uploadFile$1.class; sourceTree = "<group>"; };
+		BC56301A2349A8F8003DACCE /* GoogleDrvApi$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$Companion.class; sourceTree = "<group>"; };
+		BC56301B2349A8F8003DACCE /* GoogleDrvImpl.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl.class; sourceTree = "<group>"; };
+		BC56301C2349A8F8003DACCE /* GoogleDrvApi.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi.class; sourceTree = "<group>"; };
+		BC56301D2349A8F8003DACCE /* Waterfall.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall.class; sourceTree = "<group>"; };
+		BC56301E2349A8F8003DACCE /* GoogleDrvImpl$uploadFile$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$uploadFile$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC56301F2349A8F8003DACCE /* GoogleOAuth.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth.class; sourceTree = "<group>"; };
+		BC5630202349A8F8003DACCE /* UploadResponse$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = UploadResponse$$serializer.class; sourceTree = "<group>"; };
+		BC5630212349A8F8003DACCE /* GoogleDrvImpl$deleteFile$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$deleteFile$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC5630222349A8F8003DACCE /* GoogleDrvImpl$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$Companion.class; sourceTree = "<group>"; };
+		BC5630232349A8F8003DACCE /* JWTClaims.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTClaims.class; sourceTree = "<group>"; };
+		BC5630242349A8F8003DACCE /* Waterfall$bufferChannelPumper$$inlined$select$lambda$2$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$bufferChannelPumper$$inlined$select$lambda$2$2.class; sourceTree = "<group>"; };
+		BC5630252349A8F8003DACCE /* GoogleDrvImpl$httpClient$1$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$httpClient$1$1.class; sourceTree = "<group>"; };
+		BC5630262349A8F8003DACCE /* GoogleDrvImpl$httpClient$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$httpClient$1.class; sourceTree = "<group>"; };
+		BC5630272349A8F8003DACCE /* JWTHeader$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTHeader$$serializer.class; sourceTree = "<group>"; };
+		BC5630282349A8F8003DACCE /* GoogleDrvImpl$deleteFile$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$deleteFile$1.class; sourceTree = "<group>"; };
+		BC5630292349A8F8003DACCE /* AccessToken$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AccessToken$Companion.class; sourceTree = "<group>"; };
+		BC56302A2349A8F8003DACCE /* CoruntineException.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CoruntineException.class; sourceTree = "<group>"; };
+		BC56302B2349A8F8003DACCE /* AuthAssertion$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AuthAssertion$$serializer.class; sourceTree = "<group>"; };
+		BC56302C2349A8F8003DACCE /* GoogleDrvApi$renameCloudFile$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$renameCloudFile$1.class; sourceTree = "<group>"; };
+		BC56302D2349A8F8003DACCE /* Waterfall$bufferChannelPumper$$inlined$select$lambda$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$bufferChannelPumper$$inlined$select$lambda$1.class; sourceTree = "<group>"; };
+		BC56302E2349A8F8003DACCE /* Waterfall$bufferChannelPumper$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$bufferChannelPumper$1.class; sourceTree = "<group>"; };
+		BC56302F2349A8F8003DACCE /* WaterfallEntry$inflow$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = WaterfallEntry$inflow$1.class; sourceTree = "<group>"; };
+		BC5630302349A8F8003DACCE /* GoogleOAuth$postAuthRequest$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$postAuthRequest$1.class; sourceTree = "<group>"; };
+		BC5630312349A8F8003DACCE /* JWTClaims$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTClaims$Companion.class; sourceTree = "<group>"; };
+		BC5630322349A8F8003DACCE /* GoogleDrvImpl$createFolder$$inlined$request$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$createFolder$$inlined$request$1.class; sourceTree = "<group>"; };
+		BC5630332349A8F8003DACCE /* ListResponse$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = ListResponse$Companion.class; sourceTree = "<group>"; };
+		BC5630342349A8F8003DACCE /* CreateResponse$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CreateResponse$Companion.class; sourceTree = "<group>"; };
+		BC5630352349A8F8003DACCE /* JWTHeader$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = JWTHeader$Companion.class; sourceTree = "<group>"; };
+		BC5630362349A8F8003DACCE /* GoogleDrvApi$renameCloudFile$1$renameTask$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$renameCloudFile$1$renameTask$1.class; sourceTree = "<group>"; };
+		BC5630372349A8F8003DACCE /* RxWrapperKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = RxWrapperKt.class; sourceTree = "<group>"; };
+		BC5630382349A8F8003DACCE /* GoogleDrvApi$uploadToCloud$1$uploadTask$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$uploadToCloud$1$uploadTask$1.class; sourceTree = "<group>"; };
+		BC5630392349A8F8003DACCE /* Waterfall$bufferChannelPumper$$inlined$select$lambda$2$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$bufferChannelPumper$$inlined$select$lambda$2$1.class; sourceTree = "<group>"; };
+		BC56303A2349A8F8003DACCE /* GoogleOAuth$httpClient$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$httpClient$1.class; sourceTree = "<group>"; };
+		BC56303B2349A8F8003DACCE /* GoogleDrvApi$uploadToCloud$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$uploadToCloud$1.class; sourceTree = "<group>"; };
+		BC56303C2349A8F8003DACCE /* PlatformUtilsKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = PlatformUtilsKt.class; sourceTree = "<group>"; };
+		BC56303D2349A8F8003DACCE /* Waterfall$bufferChannelPumper$$inlined$select$lambda$2.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = Waterfall$bufferChannelPumper$$inlined$select$lambda$2.class; sourceTree = "<group>"; };
+		BC56303E2349A8F8003DACCE /* CreateResponse$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = CreateResponse$$serializer.class; sourceTree = "<group>"; };
+		BC56303F2349A8F8003DACCE /* WaterfallEntry.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = WaterfallEntry.class; sourceTree = "<group>"; };
+		BC5630402349A8F8003DACCE /* AccessToken$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AccessToken$$serializer.class; sourceTree = "<group>"; };
+		BC5630412349A8F8003DACCE /* DrvFile$$serializer.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrvFile$$serializer.class; sourceTree = "<group>"; };
+		BC5630422349A8F8003DACCE /* WaterfallEntry$$special$$inlined$CoroutineExceptionHandler$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = WaterfallEntry$$special$$inlined$CoroutineExceptionHandler$1.class; sourceTree = "<group>"; };
+		BC5630432349A8F8003DACCE /* GoogleDrive$uploadToCloud$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrive$uploadToCloud$1.class; sourceTree = "<group>"; };
+		BC5630442349A8F8003DACCE /* GoogleDrvImpl$listFiles$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$listFiles$1.class; sourceTree = "<group>"; };
+		BC5630452349A8F8003DACCE /* GoogleDrvApi$createOneDir$1$createJob$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$createOneDir$1$createJob$1.class; sourceTree = "<group>"; };
+		BC5630462349A8F8003DACCE /* GoogleDrvApi$createOneDir$1$deleteJob$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvApi$createOneDir$1$deleteJob$1.class; sourceTree = "<group>"; };
+		BC5630472349A8F8003DACCE /* GoogleDrvImpl$deleteFiles$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImpl$deleteFiles$1.class; sourceTree = "<group>"; };
+		BC5630482349A8F8003DACCE /* WaterfallEntry$start$1$1.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = WaterfallEntry$start$1$1.class; sourceTree = "<group>"; };
+		BC5630492349A8F8003DACCE /* GoogleOAuth$Companion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleOAuth$Companion.class; sourceTree = "<group>"; };
+		BC56304A2349A8F8003DACCE /* AuthAssertion.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = AuthAssertion.class; sourceTree = "<group>"; };
+		BC56304B2349A8F8003DACCE /* GoogleDrvImplKt.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = GoogleDrvImplKt.class; sourceTree = "<group>"; };
+		BC56304C2349A8F8003DACCE /* DrvFile.class */ = {isa = PBXFileReference; lastKnownFileType = compiled.javaclass; path = DrvFile.class; sourceTree = "<group>"; };
+		BC56304F2349A8F8003DACCE /* manifest-merger-debug-report.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manifest-merger-debug-report.txt"; sourceTree = "<group>"; };
+		BC5630502349A8F8003DACCE /* manifest-merger-release-report.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "manifest-merger-release-report.txt"; sourceTree = "<group>"; };
+		BC5630512349A8F8003DACCE /* SharedKotlin_commonMain.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SharedKotlin_commonMain.iml; sourceTree = "<group>"; };
+		BC5630522349A8F8003DACCE /* MPP-SharedKotlin_iosTest.iml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "MPP-SharedKotlin_iosTest.iml"; sourceTree = "<group>"; };
+		BC56305A2349A8F8003DACCE /* GoogleDrvApi.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = GoogleDrvApi.kt; sourceTree = "<group>"; };
+		BC56305B2349A8F8003DACCE /* iosPlatform.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = iosPlatform.kt; sourceTree = "<group>"; };
+		BC56305C2349A8F8003DACCE /* RxWrapper.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RxWrapper.kt; sourceTree = "<group>"; };
+		BC56305D2349A8F8003DACCE /* Dispatcher.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dispatcher.kt; sourceTree = "<group>"; };
+		BC56305E2349A8F8003DACCE /* WaterfallEntry.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WaterfallEntry.kt; sourceTree = "<group>"; };
+		BC5630652349A8F8003DACCE /* Waterfall.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Waterfall.kt; sourceTree = "<group>"; };
+		BC5630662349A8F8003DACCE /* GoogleDrvImpl.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = GoogleDrvImpl.kt; sourceTree = "<group>"; };
+		BC5630672349A8F8003DACCE /* CoruntineException.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CoruntineException.kt; sourceTree = "<group>"; };
+		BC5630682349A8F8003DACCE /* RxWrapper.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = RxWrapper.kt; sourceTree = "<group>"; };
+		BC5630692349A8F8003DACCE /* Dispatcher.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dispatcher.kt; sourceTree = "<group>"; };
+		BC56306A2349A8F8003DACCE /* GoogleDrive.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = GoogleDrive.kt; sourceTree = "<group>"; };
+		BC56306B2349A8F8003DACCE /* GoogleOAuth.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = GoogleOAuth.kt; sourceTree = "<group>"; };
+		BC56306C2349A8F8003DACCE /* PlatformUtils.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PlatformUtils.kt; sourceTree = "<group>"; };
+		BC56306E2349A8F8003DACCE /* AndroidManifest.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
+		BC5630702349A8F8003DACCE /* google_drive_credential.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = google_drive_credential.txt; sourceTree = "<group>"; };
+		BC5630772349A8F8003DACCE /* GoogleDrvApi.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = GoogleDrvApi.kt; sourceTree = "<group>"; };
+		BC5630782349A8F8003DACCE /* rxWrapper.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = rxWrapper.kt; sourceTree = "<group>"; };
+		BC5630792349A8F8003DACCE /* Dispatcher.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dispatcher.kt; sourceTree = "<group>"; };
+		BC56307A2349A8F8003DACCE /* androidPlatform.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = androidPlatform.kt; sourceTree = "<group>"; };
+		BC56307B2349A8F8003DACCE /* WaterfallEntry.kt */ = {isa = PBXFileReference; lastKnownFileType = text; path = WaterfallEntry.kt; sourceTree = "<group>"; };
+		BCFF34E32343FDCA00A41309 /* MPP_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPP_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFF34E62343FDCA00A41309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCFF34E82343FDCA00A41309 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCFF34EA2343FDCA00A41309 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCFF34EC2343FDCD00A41309 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCFF34EF2343FDCD00A41309 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BCFF34F22343FDCD00A41309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCFF34F42343FDCD00A41309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF34F92343FDCD00A41309 /* MPP_IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPP_IOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFF34FD2343FDCE00A41309 /* MPP_IOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPP_IOSTests.swift; sourceTree = "<group>"; };
+		BCFF34FF2343FDCE00A41309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF35042343FDCE00A41309 /* MPP_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPP_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFF35082343FDCE00A41309 /* MPP_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPP_IOSUITests.swift; sourceTree = "<group>"; };
+		BCFF350A2343FDCE00A41309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFF353C23454A7C00A41309 /* TubiRxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubiRxSwift.swift; sourceTree = "<group>"; };
+		BCFF353E2345A95200A41309 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		BCFF36682345C54E00A41309 /* SharedKotlin.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = SharedKotlin.framework.dSYM; sourceTree = "<group>"; };
+		BCFF36692345C54E00A41309 /* SharedKotlin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SharedKotlin.framework; sourceTree = "<group>"; };
+		BCFF366A2345CB0500A41309 /* TubiIosPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TubiIosPlatform.swift; sourceTree = "<group>"; };
+		C1CDC904A9DFF854584E312A /* Pods_MPP_IOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPP_IOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFBD4A86C9E46D71B8532BF9 /* Pods-MPP_IOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP_IOSUITests.release.xcconfig"; path = "Target Support Files/Pods-MPP_IOSUITests/Pods-MPP_IOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E3B074CFB18AE11AA4BB2FFC /* Pods-MPP_IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP_IOS.release.xcconfig"; path = "Target Support Files/Pods-MPP_IOS/Pods-MPP_IOS.release.xcconfig"; sourceTree = "<group>"; };
+		ED3B2676AFD57C0E139F523E /* Pods-MPP_IOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP_IOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-MPP_IOSUITests/Pods-MPP_IOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0367385121EF4294099A2D2 /* Pods-MPP_IOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP_IOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MPP_IOSTests/Pods-MPP_IOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCFF34E02343FDCA00A41309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC56307C2349AB82003DACCE /* SharedKotlin.framework in Frameworks */,
+				58DF2F89FB93A38A48937F3F /* Pods_MPP_IOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF34F62343FDCD00A41309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0212A02663188F5805CE9A98 /* Pods_MPP_IOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF35012343FDCE00A41309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04843FF3D6699C5316669A0D /* Pods_MPP_IOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEBFEC8FB8C4A164C1450E20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62CDB1666AC889388893A641 /* Pods-MPP_IOS.debug.xcconfig */,
+				E3B074CFB18AE11AA4BB2FFC /* Pods-MPP_IOS.release.xcconfig */,
+				F0367385121EF4294099A2D2 /* Pods-MPP_IOSTests.debug.xcconfig */,
+				00176471A593B84FABB1F07C /* Pods-MPP_IOSTests.release.xcconfig */,
+				ED3B2676AFD57C0E139F523E /* Pods-MPP_IOSUITests.debug.xcconfig */,
+				DFBD4A86C9E46D71B8532BF9 /* Pods-MPP_IOSUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC562DEE2349A8F7003DACCE /* SharedKotlin */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DEF2349A8F7003DACCE /* MPP-SharedKotlin_iosMain.iml */,
+				BC562DF02349A8F7003DACCE /* SharedKotlin_commonTest.iml */,
+				BC562DF12349A8F7003DACCE /* SharedKotlin.iml */,
+				BC562DF22349A8F7003DACCE /* build.gradle */,
+				BC562DF32349A8F7003DACCE /* build */,
+				BC5630512349A8F8003DACCE /* SharedKotlin_commonMain.iml */,
+				BC5630522349A8F8003DACCE /* MPP-SharedKotlin_iosTest.iml */,
+				BC5630532349A8F8003DACCE /* src */,
+			);
+			name = SharedKotlin;
+			path = ../MPP/SharedKotlin;
+			sourceTree = "<group>";
+		};
+		BC562DF32349A8F7003DACCE /* build */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DF42349A8F7003DACCE /* generated */,
+				BC562E0F2349A8F7003DACCE /* bin */,
+				BC562E142349A8F7003DACCE /* .transforms */,
+				BC562E2D2349A8F7003DACCE /* kotlin */,
+				BC562EFE2349A8F8003DACCE /* intermediates */,
+				BC562F922349A8F8003DACCE /* tmp */,
+				BC56304D2349A8F8003DACCE /* outputs */,
+			);
+			path = build;
+			sourceTree = "<group>";
+		};
+		BC562DF42349A8F7003DACCE /* generated */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DF52349A8F7003DACCE /* res */,
+				BC562DFC2349A8F7003DACCE /* source */,
+				BC562E0A2349A8F7003DACCE /* ap_generated_sources */,
+			);
+			path = generated;
+			sourceTree = "<group>";
+		};
+		BC562DF52349A8F7003DACCE /* res */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DF62349A8F7003DACCE /* pngs */,
+				BC562DF92349A8F7003DACCE /* resValues */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		BC562DF62349A8F7003DACCE /* pngs */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DF72349A8F7003DACCE /* release */,
+				BC562DF82349A8F7003DACCE /* debug */,
+			);
+			path = pngs;
+			sourceTree = "<group>";
+		};
+		BC562DF72349A8F7003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562DF82349A8F7003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562DF92349A8F7003DACCE /* resValues */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DFA2349A8F7003DACCE /* release */,
+				BC562DFB2349A8F7003DACCE /* debug */,
+			);
+			path = resValues;
+			sourceTree = "<group>";
+		};
+		BC562DFA2349A8F7003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562DFB2349A8F7003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562DFC2349A8F7003DACCE /* source */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DFD2349A8F7003DACCE /* buildConfig */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		BC562DFD2349A8F7003DACCE /* buildConfig */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DFE2349A8F7003DACCE /* release */,
+				BC562E042349A8F7003DACCE /* debug */,
+			);
+			path = buildConfig;
+			sourceTree = "<group>";
+		};
+		BC562DFE2349A8F7003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DFF2349A8F7003DACCE /* com */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562DFF2349A8F7003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E002349A8F7003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC562E002349A8F7003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E012349A8F7003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC562E012349A8F7003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E022349A8F7003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC562E022349A8F7003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E032349A8F7003DACCE /* BuildConfig.java */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BC562E042349A8F7003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E052349A8F7003DACCE /* com */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562E052349A8F7003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E062349A8F7003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC562E062349A8F7003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E072349A8F7003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC562E072349A8F7003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E082349A8F7003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC562E082349A8F7003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E092349A8F7003DACCE /* BuildConfig.java */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BC562E0A2349A8F7003DACCE /* ap_generated_sources */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E0B2349A8F7003DACCE /* release */,
+				BC562E0D2349A8F7003DACCE /* debug */,
+			);
+			path = ap_generated_sources;
+			sourceTree = "<group>";
+		};
+		BC562E0B2349A8F7003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E0C2349A8F7003DACCE /* out */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562E0C2349A8F7003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562E0D2349A8F7003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E0E2349A8F7003DACCE /* out */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562E0E2349A8F7003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562E0F2349A8F7003DACCE /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E102349A8F7003DACCE /* ios */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		BC562E102349A8F7003DACCE /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E112349A8F7003DACCE /* debugFramework */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		BC562E112349A8F7003DACCE /* debugFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E122349A8F7003DACCE /* SharedKotlin.framework.dSYM */,
+				BC562E132349A8F7003DACCE /* SharedKotlin.framework */,
+			);
+			path = debugFramework;
+			sourceTree = "<group>";
+		};
+		BC562E142349A8F7003DACCE /* .transforms */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E152349A8F7003DACCE /* 5fb965de1776a9574e9e9304fc9a31aa.bin */,
+				BC562E162349A8F7003DACCE /* c592db79affed0d976c524d53d136f2c */,
+				BC562E192349A8F7003DACCE /* 69cabe3f8694c7814ecaa6f59d6f53bb.bin */,
+				BC562E1A2349A8F7003DACCE /* f63598ebc2727915f8c1541595e46038 */,
+				BC562E1D2349A8F7003DACCE /* c6c9b2cd2690feee162eb4afc846df97 */,
+				BC562E1E2349A8F7003DACCE /* f63598ebc2727915f8c1541595e46038.bin */,
+				BC562E1F2349A8F7003DACCE /* c592db79affed0d976c524d53d136f2c.bin */,
+				BC562E202349A8F7003DACCE /* 69cabe3f8694c7814ecaa6f59d6f53bb */,
+				BC562E232349A8F7003DACCE /* fa91d85f710a0b66ed1fa342557f17e2 */,
+				BC562E242349A8F7003DACCE /* 5e3580c16db8aae41bec70d60f173fdb.bin */,
+				BC562E252349A8F7003DACCE /* fa91d85f710a0b66ed1fa342557f17e2.bin */,
+				BC562E262349A8F7003DACCE /* 5e3580c16db8aae41bec70d60f173fdb */,
+				BC562E292349A8F7003DACCE /* c6c9b2cd2690feee162eb4afc846df97.bin */,
+				BC562E2A2349A8F7003DACCE /* 5fb965de1776a9574e9e9304fc9a31aa */,
+			);
+			path = .transforms;
+			sourceTree = "<group>";
+		};
+		BC562E162349A8F7003DACCE /* c592db79affed0d976c524d53d136f2c */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E172349A8F7003DACCE /* full */,
+			);
+			path = c592db79affed0d976c524d53d136f2c;
+			sourceTree = "<group>";
+		};
+		BC562E172349A8F7003DACCE /* full */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E182349A8F7003DACCE /* classes.dex */,
+			);
+			path = full;
+			sourceTree = "<group>";
+		};
+		BC562E1A2349A8F7003DACCE /* f63598ebc2727915f8c1541595e46038 */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E1B2349A8F7003DACCE /* full */,
+			);
+			path = f63598ebc2727915f8c1541595e46038;
+			sourceTree = "<group>";
+		};
+		BC562E1B2349A8F7003DACCE /* full */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E1C2349A8F7003DACCE /* classes.dex */,
+			);
+			path = full;
+			sourceTree = "<group>";
+		};
+		BC562E1D2349A8F7003DACCE /* c6c9b2cd2690feee162eb4afc846df97 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = c6c9b2cd2690feee162eb4afc846df97;
+			sourceTree = "<group>";
+		};
+		BC562E202349A8F7003DACCE /* 69cabe3f8694c7814ecaa6f59d6f53bb */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E212349A8F7003DACCE /* full */,
+			);
+			path = 69cabe3f8694c7814ecaa6f59d6f53bb;
+			sourceTree = "<group>";
+		};
+		BC562E212349A8F7003DACCE /* full */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E222349A8F7003DACCE /* classes.dex */,
+			);
+			path = full;
+			sourceTree = "<group>";
+		};
+		BC562E232349A8F7003DACCE /* fa91d85f710a0b66ed1fa342557f17e2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fa91d85f710a0b66ed1fa342557f17e2;
+			sourceTree = "<group>";
+		};
+		BC562E262349A8F7003DACCE /* 5e3580c16db8aae41bec70d60f173fdb */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E272349A8F7003DACCE /* full */,
+			);
+			path = 5e3580c16db8aae41bec70d60f173fdb;
+			sourceTree = "<group>";
+		};
+		BC562E272349A8F7003DACCE /* full */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E282349A8F7003DACCE /* classes.dex */,
+			);
+			path = full;
+			sourceTree = "<group>";
+		};
+		BC562E2A2349A8F7003DACCE /* 5fb965de1776a9574e9e9304fc9a31aa */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E2B2349A8F7003DACCE /* full */,
+			);
+			path = 5fb965de1776a9574e9e9304fc9a31aa;
+			sourceTree = "<group>";
+		};
+		BC562E2B2349A8F7003DACCE /* full */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E2C2349A8F7003DACCE /* classes.dex */,
+			);
+			path = full;
+			sourceTree = "<group>";
+		};
+		BC562E2D2349A8F7003DACCE /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E2E2349A8F7003DACCE /* compileDebugKotlinAndroid */,
+				BC562E9A2349A8F8003DACCE /* compileReleaseKotlinAndroid */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		BC562E2E2349A8F7003DACCE /* compileDebugKotlinAndroid */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E2F2349A8F7003DACCE /* build-history.bin */,
+				BC562E302349A8F7003DACCE /* last-build.bin */,
+				BC562E312349A8F7003DACCE /* caches-jvm */,
+			);
+			path = compileDebugKotlinAndroid;
+			sourceTree = "<group>";
+		};
+		BC562E312349A8F7003DACCE /* caches-jvm */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E322349A8F7003DACCE /* lookups */,
+				BC562E4B2349A8F7003DACCE /* jvm */,
+				BC562E902349A8F8003DACCE /* inputs */,
+			);
+			path = "caches-jvm";
+			sourceTree = "<group>";
+		};
+		BC562E322349A8F7003DACCE /* lookups */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E332349A8F7003DACCE /* file-to-id.tab.values.at */,
+				BC562E342349A8F7003DACCE /* lookups.tab.keystream.len */,
+				BC562E352349A8F7003DACCE /* file-to-id.tab */,
+				BC562E362349A8F7003DACCE /* file-to-id.tab_i */,
+				BC562E372349A8F7003DACCE /* file-to-id.tab.keystream */,
+				BC562E382349A8F7003DACCE /* file-to-id.tab.keystream.len */,
+				BC562E392349A8F7003DACCE /* lookups.tab_i.len */,
+				BC562E3A2349A8F7003DACCE /* lookups.tab_i */,
+				BC562E3B2349A8F7003DACCE /* id-to-file.tab.keystream.len */,
+				BC562E3C2349A8F7003DACCE /* id-to-file.tab.len */,
+				BC562E3D2349A8F7003DACCE /* file-to-id.tab.len */,
+				BC562E3E2349A8F7003DACCE /* lookups.tab.values */,
+				BC562E3F2349A8F7003DACCE /* counters.tab */,
+				BC562E402349A8F7003DACCE /* file-to-id.tab_i.len */,
+				BC562E412349A8F7003DACCE /* lookups.tab.keystream */,
+				BC562E422349A8F7003DACCE /* lookups.tab.values.at */,
+				BC562E432349A8F7003DACCE /* id-to-file.tab */,
+				BC562E442349A8F7003DACCE /* lookups.tab */,
+				BC562E452349A8F7003DACCE /* id-to-file.tab.keystream */,
+				BC562E462349A8F7003DACCE /* lookups.tab.values.s */,
+				BC562E472349A8F7003DACCE /* id-to-file.tab_i */,
+				BC562E482349A8F7003DACCE /* id-to-file.tab_i.len */,
+				BC562E492349A8F7003DACCE /* lookups.tab.len */,
+				BC562E4A2349A8F7003DACCE /* id-to-file.tab.values.at */,
+			);
+			path = lookups;
+			sourceTree = "<group>";
+		};
+		BC562E4B2349A8F7003DACCE /* jvm */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E4C2349A8F7003DACCE /* kotlin */,
+			);
+			path = jvm;
+			sourceTree = "<group>";
+		};
+		BC562E4C2349A8F7003DACCE /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E4D2349A8F7003DACCE /* complementary-files.tab.keystream */,
+				BC562E4E2349A8F7003DACCE /* complementary-files.tab.keystream.len */,
+				BC562E4F2349A8F7003DACCE /* proto.tab.values */,
+				BC562E502349A8F7003DACCE /* constants.tab.keystream */,
+				BC562E512349A8F7003DACCE /* complementary-files.tab_i.len */,
+				BC562E522349A8F7003DACCE /* subtypes.tab_i */,
+				BC562E532349A8F7003DACCE /* source-to-classes.tab.len */,
+				BC562E542349A8F7003DACCE /* class-fq-name-to-source.tab_i.len */,
+				BC562E552349A8F7003DACCE /* class-fq-name-to-source.tab.len */,
+				BC562E562349A8F7003DACCE /* subtypes.tab_i.len */,
+				BC562E572349A8F7003DACCE /* complementary-files.tab */,
+				BC562E582349A8F7003DACCE /* complementary-files.tab_i */,
+				BC562E592349A8F7003DACCE /* constants.tab.values.at */,
+				BC562E5A2349A8F7003DACCE /* supertypes.tab.len */,
+				BC562E5B2349A8F7003DACCE /* proto.tab.keystream.len */,
+				BC562E5C2349A8F7003DACCE /* complementary-files.tab.values.at */,
+				BC562E5D2349A8F7003DACCE /* subtypes.tab.keystream.len */,
+				BC562E5E2349A8F7003DACCE /* package-parts.tab */,
+				BC562E5F2349A8F7003DACCE /* source-to-classes.tab.keystream.len */,
+				BC562E602349A8F7003DACCE /* internal-name-to-source.tab.len */,
+				BC562E612349A8F7003DACCE /* source-to-classes.tab */,
+				BC562E622349A8F7003DACCE /* internal-name-to-source.tab.keystream */,
+				BC562E632349A8F7003DACCE /* source-to-classes.tab.keystream */,
+				BC562E642349A8F7003DACCE /* supertypes.tab_i */,
+				BC562E652349A8F7003DACCE /* class-fq-name-to-source.tab.keystream.len */,
+				BC562E662349A8F7003DACCE /* source-to-classes.tab_i.len */,
+				BC562E672349A8F7003DACCE /* internal-name-to-source.tab_i */,
+				BC562E682349A8F7003DACCE /* class-fq-name-to-source.tab.keystream */,
+				BC562E692349A8F7003DACCE /* internal-name-to-source.tab.keystream.len */,
+				BC562E6A2349A8F7003DACCE /* proto.tab.values.s */,
+				BC562E6B2349A8F7003DACCE /* package-parts.tab_i */,
+				BC562E6C2349A8F7003DACCE /* internal-name-to-source.tab */,
+				BC562E6D2349A8F7003DACCE /* internal-name-to-source.tab.values.at */,
+				BC562E6E2349A8F7003DACCE /* supertypes.tab */,
+				BC562E6F2349A8F7003DACCE /* constants.tab_i.len */,
+				BC562E702349A8F7003DACCE /* constants.tab_i */,
+				BC562E712349A8F7003DACCE /* source-to-classes.tab.values.at */,
+				BC562E722349A8F7003DACCE /* package-parts.tab_i.len */,
+				BC562E732349A8F7003DACCE /* class-fq-name-to-source.tab.values.at */,
+				BC562E742349A8F7003DACCE /* source-to-classes.tab_i */,
+				BC562E752349A8F7003DACCE /* subtypes.tab.len */,
+				BC562E762349A8F7003DACCE /* constants.tab */,
+				BC562E772349A8F7003DACCE /* subtypes.tab.values.at */,
+				BC562E782349A8F7003DACCE /* internal-name-to-source.tab.values */,
+				BC562E792349A8F7003DACCE /* internal-name-to-source.tab_i.len */,
+				BC562E7A2349A8F7003DACCE /* constants.tab.len */,
+				BC562E7B2349A8F7003DACCE /* subtypes.tab */,
+				BC562E7C2349A8F7003DACCE /* package-parts.tab.values.at */,
+				BC562E7D2349A8F7003DACCE /* subtypes.tab.keystream */,
+				BC562E7E2349A8F7003DACCE /* proto.tab */,
+				BC562E7F2349A8F7003DACCE /* proto.tab.len */,
+				BC562E802349A8F7003DACCE /* package-parts.tab.keystream */,
+				BC562E812349A8F7003DACCE /* class-fq-name-to-source.tab */,
+				BC562E822349A8F7003DACCE /* package-parts.tab.keystream.len */,
+				BC562E832349A8F7003DACCE /* proto.tab.keystream */,
+				BC562E842349A8F7003DACCE /* constants.tab.keystream.len */,
+				BC562E852349A8F7003DACCE /* supertypes.tab_i.len */,
+				BC562E862349A8F7003DACCE /* supertypes.tab.values.at */,
+				BC562E872349A8F7003DACCE /* internal-name-to-source.tab.values.s */,
+				BC562E882349A8F7003DACCE /* complementary-files.tab.len */,
+				BC562E892349A8F7003DACCE /* supertypes.tab.keystream.len */,
+				BC562E8A2349A8F7003DACCE /* class-fq-name-to-source.tab_i */,
+				BC562E8B2349A8F7003DACCE /* proto.tab_i.len */,
+				BC562E8C2349A8F7003DACCE /* proto.tab.values.at */,
+				BC562E8D2349A8F7003DACCE /* proto.tab_i */,
+				BC562E8E2349A8F7003DACCE /* package-parts.tab.len */,
+				BC562E8F2349A8F7003DACCE /* supertypes.tab.keystream */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		BC562E902349A8F8003DACCE /* inputs */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E912349A8F8003DACCE /* source-to-output.tab_i */,
+				BC562E922349A8F8003DACCE /* source-to-output.tab.keystream.len */,
+				BC562E932349A8F8003DACCE /* source-to-output.tab.values */,
+				BC562E942349A8F8003DACCE /* source-to-output.tab */,
+				BC562E952349A8F8003DACCE /* source-to-output.tab.values.s */,
+				BC562E962349A8F8003DACCE /* source-to-output.tab_i.len */,
+				BC562E972349A8F8003DACCE /* source-to-output.tab.keystream */,
+				BC562E982349A8F8003DACCE /* source-to-output.tab.len */,
+				BC562E992349A8F8003DACCE /* source-to-output.tab.values.at */,
+			);
+			path = inputs;
+			sourceTree = "<group>";
+		};
+		BC562E9A2349A8F8003DACCE /* compileReleaseKotlinAndroid */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E9B2349A8F8003DACCE /* build-history.bin */,
+				BC562E9C2349A8F8003DACCE /* last-build.bin */,
+				BC562E9D2349A8F8003DACCE /* caches-jvm */,
+			);
+			path = compileReleaseKotlinAndroid;
+			sourceTree = "<group>";
+		};
+		BC562E9D2349A8F8003DACCE /* caches-jvm */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E9E2349A8F8003DACCE /* lookups */,
+				BC562EB52349A8F8003DACCE /* jvm */,
+				BC562EF62349A8F8003DACCE /* inputs */,
+			);
+			path = "caches-jvm";
+			sourceTree = "<group>";
+		};
+		BC562E9E2349A8F8003DACCE /* lookups */ = {
+			isa = PBXGroup;
+			children = (
+				BC562E9F2349A8F8003DACCE /* file-to-id.tab.values.at */,
+				BC562EA02349A8F8003DACCE /* lookups.tab.keystream.len */,
+				BC562EA12349A8F8003DACCE /* file-to-id.tab */,
+				BC562EA22349A8F8003DACCE /* file-to-id.tab_i */,
+				BC562EA32349A8F8003DACCE /* file-to-id.tab.keystream */,
+				BC562EA42349A8F8003DACCE /* file-to-id.tab.keystream.len */,
+				BC562EA52349A8F8003DACCE /* lookups.tab_i.len */,
+				BC562EA62349A8F8003DACCE /* lookups.tab_i */,
+				BC562EA72349A8F8003DACCE /* id-to-file.tab.keystream.len */,
+				BC562EA82349A8F8003DACCE /* id-to-file.tab.len */,
+				BC562EA92349A8F8003DACCE /* file-to-id.tab.len */,
+				BC562EAA2349A8F8003DACCE /* counters.tab */,
+				BC562EAB2349A8F8003DACCE /* file-to-id.tab_i.len */,
+				BC562EAC2349A8F8003DACCE /* lookups.tab.keystream */,
+				BC562EAD2349A8F8003DACCE /* lookups.tab.values.at */,
+				BC562EAE2349A8F8003DACCE /* id-to-file.tab */,
+				BC562EAF2349A8F8003DACCE /* lookups.tab */,
+				BC562EB02349A8F8003DACCE /* id-to-file.tab.keystream */,
+				BC562EB12349A8F8003DACCE /* id-to-file.tab_i */,
+				BC562EB22349A8F8003DACCE /* id-to-file.tab_i.len */,
+				BC562EB32349A8F8003DACCE /* lookups.tab.len */,
+				BC562EB42349A8F8003DACCE /* id-to-file.tab.values.at */,
+			);
+			path = lookups;
+			sourceTree = "<group>";
+		};
+		BC562EB52349A8F8003DACCE /* jvm */ = {
+			isa = PBXGroup;
+			children = (
+				BC562EB62349A8F8003DACCE /* kotlin */,
+			);
+			path = jvm;
+			sourceTree = "<group>";
+		};
+		BC562EB62349A8F8003DACCE /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				BC562EB72349A8F8003DACCE /* complementary-files.tab.keystream */,
+				BC562EB82349A8F8003DACCE /* complementary-files.tab.keystream.len */,
+				BC562EB92349A8F8003DACCE /* constants.tab.keystream */,
+				BC562EBA2349A8F8003DACCE /* complementary-files.tab_i.len */,
+				BC562EBB2349A8F8003DACCE /* subtypes.tab_i */,
+				BC562EBC2349A8F8003DACCE /* source-to-classes.tab.len */,
+				BC562EBD2349A8F8003DACCE /* class-fq-name-to-source.tab_i.len */,
+				BC562EBE2349A8F8003DACCE /* class-fq-name-to-source.tab.len */,
+				BC562EBF2349A8F8003DACCE /* subtypes.tab_i.len */,
+				BC562EC02349A8F8003DACCE /* complementary-files.tab */,
+				BC562EC12349A8F8003DACCE /* complementary-files.tab_i */,
+				BC562EC22349A8F8003DACCE /* constants.tab.values.at */,
+				BC562EC32349A8F8003DACCE /* supertypes.tab.len */,
+				BC562EC42349A8F8003DACCE /* proto.tab.keystream.len */,
+				BC562EC52349A8F8003DACCE /* complementary-files.tab.values.at */,
+				BC562EC62349A8F8003DACCE /* subtypes.tab.keystream.len */,
+				BC562EC72349A8F8003DACCE /* package-parts.tab */,
+				BC562EC82349A8F8003DACCE /* source-to-classes.tab.keystream.len */,
+				BC562EC92349A8F8003DACCE /* internal-name-to-source.tab.len */,
+				BC562ECA2349A8F8003DACCE /* source-to-classes.tab */,
+				BC562ECB2349A8F8003DACCE /* internal-name-to-source.tab.keystream */,
+				BC562ECC2349A8F8003DACCE /* source-to-classes.tab.keystream */,
+				BC562ECD2349A8F8003DACCE /* supertypes.tab_i */,
+				BC562ECE2349A8F8003DACCE /* class-fq-name-to-source.tab.keystream.len */,
+				BC562ECF2349A8F8003DACCE /* source-to-classes.tab_i.len */,
+				BC562ED02349A8F8003DACCE /* internal-name-to-source.tab_i */,
+				BC562ED12349A8F8003DACCE /* class-fq-name-to-source.tab.keystream */,
+				BC562ED22349A8F8003DACCE /* internal-name-to-source.tab.keystream.len */,
+				BC562ED32349A8F8003DACCE /* package-parts.tab_i */,
+				BC562ED42349A8F8003DACCE /* internal-name-to-source.tab */,
+				BC562ED52349A8F8003DACCE /* internal-name-to-source.tab.values.at */,
+				BC562ED62349A8F8003DACCE /* supertypes.tab */,
+				BC562ED72349A8F8003DACCE /* constants.tab_i.len */,
+				BC562ED82349A8F8003DACCE /* constants.tab_i */,
+				BC562ED92349A8F8003DACCE /* source-to-classes.tab.values.at */,
+				BC562EDA2349A8F8003DACCE /* package-parts.tab_i.len */,
+				BC562EDB2349A8F8003DACCE /* class-fq-name-to-source.tab.values.at */,
+				BC562EDC2349A8F8003DACCE /* source-to-classes.tab_i */,
+				BC562EDD2349A8F8003DACCE /* subtypes.tab.len */,
+				BC562EDE2349A8F8003DACCE /* constants.tab */,
+				BC562EDF2349A8F8003DACCE /* subtypes.tab.values.at */,
+				BC562EE02349A8F8003DACCE /* internal-name-to-source.tab_i.len */,
+				BC562EE12349A8F8003DACCE /* constants.tab.len */,
+				BC562EE22349A8F8003DACCE /* subtypes.tab */,
+				BC562EE32349A8F8003DACCE /* package-parts.tab.values.at */,
+				BC562EE42349A8F8003DACCE /* subtypes.tab.keystream */,
+				BC562EE52349A8F8003DACCE /* proto.tab */,
+				BC562EE62349A8F8003DACCE /* proto.tab.len */,
+				BC562EE72349A8F8003DACCE /* package-parts.tab.keystream */,
+				BC562EE82349A8F8003DACCE /* class-fq-name-to-source.tab */,
+				BC562EE92349A8F8003DACCE /* package-parts.tab.keystream.len */,
+				BC562EEA2349A8F8003DACCE /* proto.tab.keystream */,
+				BC562EEB2349A8F8003DACCE /* constants.tab.keystream.len */,
+				BC562EEC2349A8F8003DACCE /* supertypes.tab_i.len */,
+				BC562EED2349A8F8003DACCE /* supertypes.tab.values.at */,
+				BC562EEE2349A8F8003DACCE /* complementary-files.tab.len */,
+				BC562EEF2349A8F8003DACCE /* supertypes.tab.keystream.len */,
+				BC562EF02349A8F8003DACCE /* class-fq-name-to-source.tab_i */,
+				BC562EF12349A8F8003DACCE /* proto.tab_i.len */,
+				BC562EF22349A8F8003DACCE /* proto.tab.values.at */,
+				BC562EF32349A8F8003DACCE /* proto.tab_i */,
+				BC562EF42349A8F8003DACCE /* package-parts.tab.len */,
+				BC562EF52349A8F8003DACCE /* supertypes.tab.keystream */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		BC562EF62349A8F8003DACCE /* inputs */ = {
+			isa = PBXGroup;
+			children = (
+				BC562EF72349A8F8003DACCE /* source-to-output.tab_i */,
+				BC562EF82349A8F8003DACCE /* source-to-output.tab.keystream.len */,
+				BC562EF92349A8F8003DACCE /* source-to-output.tab */,
+				BC562EFA2349A8F8003DACCE /* source-to-output.tab_i.len */,
+				BC562EFB2349A8F8003DACCE /* source-to-output.tab.keystream */,
+				BC562EFC2349A8F8003DACCE /* source-to-output.tab.len */,
+				BC562EFD2349A8F8003DACCE /* source-to-output.tab.values.at */,
+			);
+			path = inputs;
+			sourceTree = "<group>";
+		};
+		BC562EFE2349A8F8003DACCE /* intermediates */ = {
+			isa = PBXGroup;
+			children = (
+				BC562EFF2349A8F8003DACCE /* res */,
+				BC562F052349A8F8003DACCE /* packaged_res */,
+				BC562F082349A8F8003DACCE /* library_assets */,
+				BC562F0C2349A8F8003DACCE /* full_jar */,
+				BC562F102349A8F8003DACCE /* merged_manifests */,
+				BC562F152349A8F8003DACCE /* annotation_processor_list */,
+				BC562F1A2349A8F8003DACCE /* incremental */,
+				BC562F2E2349A8F8003DACCE /* local_only_symbol_list */,
+				BC562F352349A8F8003DACCE /* aapt_friendly_merged_manifests */,
+				BC562F3E2349A8F8003DACCE /* runtime_library_classes */,
+				BC562F412349A8F8003DACCE /* library_java_res */,
+				BC562F442349A8F8003DACCE /* proguard-files */,
+				BC562F4B2349A8F8003DACCE /* merged_native_libs */,
+				BC562F4E2349A8F8003DACCE /* javac */,
+				BC562F5D2349A8F8003DACCE /* shader_assets */,
+				BC562F612349A8F8003DACCE /* compile_library_classes */,
+				BC562F662349A8F8003DACCE /* manifest_merge_blame_file */,
+				BC562F6B2349A8F8003DACCE /* merged_jni_libs */,
+				BC562F6E2349A8F8003DACCE /* compile_only_not_namespaced_r_class_jar */,
+				BC562F732349A8F8003DACCE /* symbols */,
+				BC562F782349A8F8003DACCE /* library_manifest */,
+				BC562F7D2349A8F8003DACCE /* merged_shaders */,
+				BC562F802349A8F8003DACCE /* intermediate-jars */,
+				BC562F832349A8F8003DACCE /* check_manifest_result */,
+				BC562F8A2349A8F8003DACCE /* stripped_native_libs */,
+				BC562F8D2349A8F8003DACCE /* public_res */,
+			);
+			path = intermediates;
+			sourceTree = "<group>";
+		};
+		BC562EFF2349A8F8003DACCE /* res */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F002349A8F8003DACCE /* symbol-table-with-package */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		BC562F002349A8F8003DACCE /* symbol-table-with-package */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F012349A8F8003DACCE /* release */,
+				BC562F032349A8F8003DACCE /* debug */,
+			);
+			path = "symbol-table-with-package";
+			sourceTree = "<group>";
+		};
+		BC562F012349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F022349A8F8003DACCE /* package-aware-r.txt */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F032349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F042349A8F8003DACCE /* package-aware-r.txt */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F052349A8F8003DACCE /* packaged_res */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F062349A8F8003DACCE /* release */,
+				BC562F072349A8F8003DACCE /* debug */,
+			);
+			path = packaged_res;
+			sourceTree = "<group>";
+		};
+		BC562F062349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F072349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F082349A8F8003DACCE /* library_assets */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F092349A8F8003DACCE /* debug */,
+			);
+			path = library_assets;
+			sourceTree = "<group>";
+		};
+		BC562F092349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F0A2349A8F8003DACCE /* out */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F0A2349A8F8003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F0B2349A8F8003DACCE /* google_drive_credential.txt */,
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562F0C2349A8F8003DACCE /* full_jar */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F0D2349A8F8003DACCE /* debug */,
+			);
+			path = full_jar;
+			sourceTree = "<group>";
+		};
+		BC562F0D2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F0E2349A8F8003DACCE /* createFullJarDebug */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F0E2349A8F8003DACCE /* createFullJarDebug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F0F2349A8F8003DACCE /* full.jar */,
+			);
+			path = createFullJarDebug;
+			sourceTree = "<group>";
+		};
+		BC562F102349A8F8003DACCE /* merged_manifests */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F112349A8F8003DACCE /* release */,
+				BC562F132349A8F8003DACCE /* debug */,
+			);
+			path = merged_manifests;
+			sourceTree = "<group>";
+		};
+		BC562F112349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F122349A8F8003DACCE /* output.json */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F132349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F142349A8F8003DACCE /* output.json */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F152349A8F8003DACCE /* annotation_processor_list */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F162349A8F8003DACCE /* release */,
+				BC562F182349A8F8003DACCE /* debug */,
+			);
+			path = annotation_processor_list;
+			sourceTree = "<group>";
+		};
+		BC562F162349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F172349A8F8003DACCE /* annotationProcessors.json */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F182349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F192349A8F8003DACCE /* annotationProcessors.json */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F1A2349A8F8003DACCE /* incremental */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F1B2349A8F8003DACCE /* packageDebugAssets */,
+				BC562F1D2349A8F8003DACCE /* debug-mergeNativeLibs */,
+				BC562F202349A8F8003DACCE /* packageDebugResources */,
+				BC562F252349A8F8003DACCE /* packageReleaseResources */,
+				BC562F2A2349A8F8003DACCE /* mergeDebugJniLibFolders */,
+				BC562F2C2349A8F8003DACCE /* mergeDebugShaders */,
+			);
+			path = incremental;
+			sourceTree = "<group>";
+		};
+		BC562F1B2349A8F8003DACCE /* packageDebugAssets */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F1C2349A8F8003DACCE /* merger.xml */,
+			);
+			path = packageDebugAssets;
+			sourceTree = "<group>";
+		};
+		BC562F1D2349A8F8003DACCE /* debug-mergeNativeLibs */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F1E2349A8F8003DACCE /* zip-cache */,
+				BC562F1F2349A8F8003DACCE /* merge-state */,
+			);
+			path = "debug-mergeNativeLibs";
+			sourceTree = "<group>";
+		};
+		BC562F1E2349A8F8003DACCE /* zip-cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "zip-cache";
+			sourceTree = "<group>";
+		};
+		BC562F202349A8F8003DACCE /* packageDebugResources */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F212349A8F8003DACCE /* compile-file-map.properties */,
+				BC562F222349A8F8003DACCE /* merged.dir */,
+				BC562F232349A8F8003DACCE /* stripped.dir */,
+				BC562F242349A8F8003DACCE /* merger.xml */,
+			);
+			path = packageDebugResources;
+			sourceTree = "<group>";
+		};
+		BC562F222349A8F8003DACCE /* merged.dir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = merged.dir;
+			sourceTree = "<group>";
+		};
+		BC562F232349A8F8003DACCE /* stripped.dir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stripped.dir;
+			sourceTree = "<group>";
+		};
+		BC562F252349A8F8003DACCE /* packageReleaseResources */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F262349A8F8003DACCE /* compile-file-map.properties */,
+				BC562F272349A8F8003DACCE /* merged.dir */,
+				BC562F282349A8F8003DACCE /* stripped.dir */,
+				BC562F292349A8F8003DACCE /* merger.xml */,
+			);
+			path = packageReleaseResources;
+			sourceTree = "<group>";
+		};
+		BC562F272349A8F8003DACCE /* merged.dir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = merged.dir;
+			sourceTree = "<group>";
+		};
+		BC562F282349A8F8003DACCE /* stripped.dir */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = stripped.dir;
+			sourceTree = "<group>";
+		};
+		BC562F2A2349A8F8003DACCE /* mergeDebugJniLibFolders */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F2B2349A8F8003DACCE /* merger.xml */,
+			);
+			path = mergeDebugJniLibFolders;
+			sourceTree = "<group>";
+		};
+		BC562F2C2349A8F8003DACCE /* mergeDebugShaders */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F2D2349A8F8003DACCE /* merger.xml */,
+			);
+			path = mergeDebugShaders;
+			sourceTree = "<group>";
+		};
+		BC562F2E2349A8F8003DACCE /* local_only_symbol_list */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F2F2349A8F8003DACCE /* release */,
+				BC562F322349A8F8003DACCE /* debug */,
+			);
+			path = local_only_symbol_list;
+			sourceTree = "<group>";
+		};
+		BC562F2F2349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F302349A8F8003DACCE /* parseReleaseLibraryResources */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F302349A8F8003DACCE /* parseReleaseLibraryResources */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F312349A8F8003DACCE /* R-def.txt */,
+			);
+			path = parseReleaseLibraryResources;
+			sourceTree = "<group>";
+		};
+		BC562F322349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F332349A8F8003DACCE /* parseDebugLibraryResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F332349A8F8003DACCE /* parseDebugLibraryResources */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F342349A8F8003DACCE /* R-def.txt */,
+			);
+			path = parseDebugLibraryResources;
+			sourceTree = "<group>";
+		};
+		BC562F352349A8F8003DACCE /* aapt_friendly_merged_manifests */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F362349A8F8003DACCE /* release */,
+				BC562F3A2349A8F8003DACCE /* debug */,
+			);
+			path = aapt_friendly_merged_manifests;
+			sourceTree = "<group>";
+		};
+		BC562F362349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F372349A8F8003DACCE /* aapt */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F372349A8F8003DACCE /* aapt */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F382349A8F8003DACCE /* output.json */,
+				BC562F392349A8F8003DACCE /* AndroidManifest.xml */,
+			);
+			path = aapt;
+			sourceTree = "<group>";
+		};
+		BC562F3A2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F3B2349A8F8003DACCE /* aapt */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F3B2349A8F8003DACCE /* aapt */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F3C2349A8F8003DACCE /* output.json */,
+				BC562F3D2349A8F8003DACCE /* AndroidManifest.xml */,
+			);
+			path = aapt;
+			sourceTree = "<group>";
+		};
+		BC562F3E2349A8F8003DACCE /* runtime_library_classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F3F2349A8F8003DACCE /* debug */,
+			);
+			path = runtime_library_classes;
+			sourceTree = "<group>";
+		};
+		BC562F3F2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F402349A8F8003DACCE /* classes.jar */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F412349A8F8003DACCE /* library_java_res */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F422349A8F8003DACCE /* debug */,
+			);
+			path = library_java_res;
+			sourceTree = "<group>";
+		};
+		BC562F422349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F432349A8F8003DACCE /* res.jar */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F442349A8F8003DACCE /* proguard-files */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F452349A8F8003DACCE /* proguard-defaults.txt-3.5.0 */,
+				BC562F462349A8F8003DACCE /* proguard-android.txt-3.5.0 */,
+				BC562F472349A8F8003DACCE /* proguard-android.txt-3.5.1 */,
+				BC562F482349A8F8003DACCE /* proguard-defaults.txt-3.5.1 */,
+				BC562F492349A8F8003DACCE /* proguard-android-optimize.txt-3.5.1 */,
+				BC562F4A2349A8F8003DACCE /* proguard-android-optimize.txt-3.5.0 */,
+			);
+			path = "proguard-files";
+			sourceTree = "<group>";
+		};
+		BC562F4B2349A8F8003DACCE /* merged_native_libs */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F4C2349A8F8003DACCE /* debug */,
+			);
+			path = merged_native_libs;
+			sourceTree = "<group>";
+		};
+		BC562F4C2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F4D2349A8F8003DACCE /* out */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F4D2349A8F8003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562F4E2349A8F8003DACCE /* javac */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F4F2349A8F8003DACCE /* release */,
+				BC562F562349A8F8003DACCE /* debug */,
+			);
+			path = javac;
+			sourceTree = "<group>";
+		};
+		BC562F4F2349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F502349A8F8003DACCE /* classes */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F502349A8F8003DACCE /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F512349A8F8003DACCE /* com */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		BC562F512349A8F8003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F522349A8F8003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC562F522349A8F8003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F532349A8F8003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC562F532349A8F8003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F542349A8F8003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC562F542349A8F8003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F552349A8F8003DACCE /* BuildConfig.class */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BC562F562349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F572349A8F8003DACCE /* classes */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F572349A8F8003DACCE /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F582349A8F8003DACCE /* com */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		BC562F582349A8F8003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F592349A8F8003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC562F592349A8F8003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F5A2349A8F8003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC562F5A2349A8F8003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F5B2349A8F8003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC562F5B2349A8F8003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F5C2349A8F8003DACCE /* BuildConfig.class */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BC562F5D2349A8F8003DACCE /* shader_assets */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F5E2349A8F8003DACCE /* debug */,
+			);
+			path = shader_assets;
+			sourceTree = "<group>";
+		};
+		BC562F5E2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F5F2349A8F8003DACCE /* compileDebugShaders */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F5F2349A8F8003DACCE /* compileDebugShaders */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F602349A8F8003DACCE /* out */,
+			);
+			path = compileDebugShaders;
+			sourceTree = "<group>";
+		};
+		BC562F602349A8F8003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562F612349A8F8003DACCE /* compile_library_classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F622349A8F8003DACCE /* release */,
+				BC562F642349A8F8003DACCE /* debug */,
+			);
+			path = compile_library_classes;
+			sourceTree = "<group>";
+		};
+		BC562F622349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F632349A8F8003DACCE /* classes.jar */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F642349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F652349A8F8003DACCE /* classes.jar */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F662349A8F8003DACCE /* manifest_merge_blame_file */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F672349A8F8003DACCE /* release */,
+				BC562F692349A8F8003DACCE /* debug */,
+			);
+			path = manifest_merge_blame_file;
+			sourceTree = "<group>";
+		};
+		BC562F672349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F682349A8F8003DACCE /* manifest-merger-blame-release-report.txt */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F692349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F6A2349A8F8003DACCE /* manifest-merger-blame-debug-report.txt */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F6B2349A8F8003DACCE /* merged_jni_libs */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F6C2349A8F8003DACCE /* debug */,
+			);
+			path = merged_jni_libs;
+			sourceTree = "<group>";
+		};
+		BC562F6C2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F6D2349A8F8003DACCE /* out */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F6D2349A8F8003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562F6E2349A8F8003DACCE /* compile_only_not_namespaced_r_class_jar */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F6F2349A8F8003DACCE /* release */,
+				BC562F712349A8F8003DACCE /* debug */,
+			);
+			path = compile_only_not_namespaced_r_class_jar;
+			sourceTree = "<group>";
+		};
+		BC562F6F2349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F702349A8F8003DACCE /* R.jar */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F712349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F722349A8F8003DACCE /* R.jar */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F732349A8F8003DACCE /* symbols */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F742349A8F8003DACCE /* release */,
+				BC562F762349A8F8003DACCE /* debug */,
+			);
+			path = symbols;
+			sourceTree = "<group>";
+		};
+		BC562F742349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F752349A8F8003DACCE /* R.txt */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F762349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F772349A8F8003DACCE /* R.txt */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F782349A8F8003DACCE /* library_manifest */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F792349A8F8003DACCE /* release */,
+				BC562F7B2349A8F8003DACCE /* debug */,
+			);
+			path = library_manifest;
+			sourceTree = "<group>";
+		};
+		BC562F792349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F7A2349A8F8003DACCE /* AndroidManifest.xml */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F7B2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F7C2349A8F8003DACCE /* AndroidManifest.xml */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F7D2349A8F8003DACCE /* merged_shaders */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F7E2349A8F8003DACCE /* debug */,
+			);
+			path = merged_shaders;
+			sourceTree = "<group>";
+		};
+		BC562F7E2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F7F2349A8F8003DACCE /* out */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F7F2349A8F8003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562F802349A8F8003DACCE /* intermediate-jars */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F812349A8F8003DACCE /* debug */,
+			);
+			path = "intermediate-jars";
+			sourceTree = "<group>";
+		};
+		BC562F812349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F822349A8F8003DACCE /* jni */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F822349A8F8003DACCE /* jni */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = jni;
+			sourceTree = "<group>";
+		};
+		BC562F832349A8F8003DACCE /* check_manifest_result */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F842349A8F8003DACCE /* release */,
+				BC562F872349A8F8003DACCE /* debug */,
+			);
+			path = check_manifest_result;
+			sourceTree = "<group>";
+		};
+		BC562F842349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F852349A8F8003DACCE /* checkReleaseManifest */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F852349A8F8003DACCE /* checkReleaseManifest */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F862349A8F8003DACCE /* out */,
+			);
+			path = checkReleaseManifest;
+			sourceTree = "<group>";
+		};
+		BC562F862349A8F8003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562F872349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F882349A8F8003DACCE /* checkDebugManifest */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F882349A8F8003DACCE /* checkDebugManifest */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F892349A8F8003DACCE /* out */,
+			);
+			path = checkDebugManifest;
+			sourceTree = "<group>";
+		};
+		BC562F892349A8F8003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562F8A2349A8F8003DACCE /* stripped_native_libs */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F8B2349A8F8003DACCE /* debug */,
+			);
+			path = stripped_native_libs;
+			sourceTree = "<group>";
+		};
+		BC562F8B2349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F8C2349A8F8003DACCE /* out */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F8C2349A8F8003DACCE /* out */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = out;
+			sourceTree = "<group>";
+		};
+		BC562F8D2349A8F8003DACCE /* public_res */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F8E2349A8F8003DACCE /* release */,
+				BC562F902349A8F8003DACCE /* debug */,
+			);
+			path = public_res;
+			sourceTree = "<group>";
+		};
+		BC562F8E2349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F8F2349A8F8003DACCE /* packageReleaseResources */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F8F2349A8F8003DACCE /* packageReleaseResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = packageReleaseResources;
+			sourceTree = "<group>";
+		};
+		BC562F902349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F912349A8F8003DACCE /* packageDebugResources */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562F912349A8F8003DACCE /* packageDebugResources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = packageDebugResources;
+			sourceTree = "<group>";
+		};
+		BC562F922349A8F8003DACCE /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F932349A8F8003DACCE /* compileDebugJavaWithJavac */,
+				BC562F942349A8F8003DACCE /* compileReleaseJavaWithJavac */,
+				BC562F952349A8F8003DACCE /* kotlin-classes */,
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+		BC562F932349A8F8003DACCE /* compileDebugJavaWithJavac */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = compileDebugJavaWithJavac;
+			sourceTree = "<group>";
+		};
+		BC562F942349A8F8003DACCE /* compileReleaseJavaWithJavac */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = compileReleaseJavaWithJavac;
+			sourceTree = "<group>";
+		};
+		BC562F952349A8F8003DACCE /* kotlin-classes */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F962349A8F8003DACCE /* release */,
+				BC562FF42349A8F8003DACCE /* debug */,
+			);
+			path = "kotlin-classes";
+			sourceTree = "<group>";
+		};
+		BC562F962349A8F8003DACCE /* release */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F972349A8F8003DACCE /* META-INF */,
+				BC562F992349A8F8003DACCE /* com */,
+			);
+			path = release;
+			sourceTree = "<group>";
+		};
+		BC562F972349A8F8003DACCE /* META-INF */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F982349A8F8003DACCE /* SharedKotlin_release.kotlin_module */,
+			);
+			path = "META-INF";
+			sourceTree = "<group>";
+		};
+		BC562F992349A8F8003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F9A2349A8F8003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC562F9A2349A8F8003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F9B2349A8F8003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC562F9B2349A8F8003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F9C2349A8F8003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC562F9C2349A8F8003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC562F9D2349A8F8003DACCE /* Waterfall$readQueue$1.class */,
+				BC562F9E2349A8F8003DACCE /* AtomicInteger.class */,
+				BC562F9F2349A8F8003DACCE /* JWTHeader.class */,
+				BC562FA02349A8F8003DACCE /* Waterfall$start$3.class */,
+				BC562FA12349A8F8003DACCE /* RainBarrel$onDriveServiceReady$1.class */,
+				BC562FA22349A8F8003DACCE /* GoogleDrvImpl$listFiles$$inlined$request$1.class */,
+				BC562FA32349A8F8003DACCE /* Waterfall$dumpToGoogleDrive$1.class */,
+				BC562FA42349A8F8003DACCE /* UploadResponse$Companion.class */,
+				BC562FA52349A8F8003DACCE /* GoogleDrive$Companion.class */,
+				BC562FA62349A8F8003DACCE /* GoogleDrive$createOneDir$1.class */,
+				BC562FA72349A8F8003DACCE /* FixedBlockingQueue$Companion.class */,
+				BC562FA82349A8F8003DACCE /* RainBarrel$start$2.class */,
+				BC562FA92349A8F8003DACCE /* DispatcherKt.class */,
+				BC562FAA2349A8F8003DACCE /* Waterfall$switchMapDeferreds$1.class */,
+				BC562FAB2349A8F8003DACCE /* RainBarrel$Companion.class */,
+				BC562FAC2349A8F8003DACCE /* ListResponse$$serializer.class */,
+				BC562FAD2349A8F8003DACCE /* GoogleDrvApi$createOneDir$1.class */,
+				BC562FAE2349A8F8003DACCE /* GoogleOAuth$prepareAccessToken$1.class */,
+				BC562FAF2349A8F8003DACCE /* UploadResponse.class */,
+				BC562FB02349A8F8003DACCE /* GoogleOAuth$httpClient$1$1.class */,
+				BC562FB12349A8F8003DACCE /* CreateResponse.class */,
+				BC562FB22349A8F8003DACCE /* RxWrapper.class */,
+				BC562FB32349A8F8003DACCE /* Waterfall$start$2.class */,
+				BC562FB42349A8F8003DACCE /* AccessToken.class */,
+				BC562FB52349A8F8003DACCE /* GoogleOAuth$postAuthRequest$$inlined$request$1.class */,
+				BC562FB62349A8F8003DACCE /* GoogleDrvImpl$createFolder$1.class */,
+				BC562FB72349A8F8003DACCE /* GoogleDrvImpl$rename$$inlined$request$1.class */,
+				BC562FB82349A8F8003DACCE /* RainBarrel$onDriveServiceReady$2.class */,
+				BC562FB92349A8F8003DACCE /* AndroidPlatformKt.class */,
+				BC562FBA2349A8F8003DACCE /* RainBarrel$start$1.class */,
+				BC562FBB2349A8F8003DACCE /* GoogleDrvImpl$rename$1.class */,
+				BC562FBC2349A8F8003DACCE /* DrvFile$Companion.class */,
+				BC562FBD2349A8F8003DACCE /* GoogleDrive.class */,
+				BC562FBE2349A8F8003DACCE /* ListResponse.class */,
+				BC562FBF2349A8F8003DACCE /* JWTClaims$$serializer.class */,
+				BC562FC02349A8F8003DACCE /* AuthAssertion$Companion.class */,
+				BC562FC12349A8F8003DACCE /* GoogleDrvImpl$uploadFile$1.class */,
+				BC562FC22349A8F8003DACCE /* GoogleDrvApi$Companion.class */,
+				BC562FC32349A8F8003DACCE /* GoogleDrvImpl.class */,
+				BC562FC42349A8F8003DACCE /* GoogleDrvApi.class */,
+				BC562FC52349A8F8003DACCE /* Waterfall.class */,
+				BC562FC62349A8F8003DACCE /* GoogleDrvImpl$uploadFile$$inlined$request$1.class */,
+				BC562FC72349A8F8003DACCE /* GoogleOAuth.class */,
+				BC562FC82349A8F8003DACCE /* UploadResponse$$serializer.class */,
+				BC562FC92349A8F8003DACCE /* GoogleDrvImpl$deleteFile$$inlined$request$1.class */,
+				BC562FCA2349A8F8003DACCE /* RainBarrel$SendBuffer.class */,
+				BC562FCB2349A8F8003DACCE /* GoogleDrvImpl$Companion.class */,
+				BC562FCC2349A8F8003DACCE /* JWTClaims.class */,
+				BC562FCD2349A8F8003DACCE /* GoogleDrvImpl$httpClient$1$1.class */,
+				BC562FCE2349A8F8003DACCE /* GoogleDrvImpl$httpClient$1.class */,
+				BC562FCF2349A8F8003DACCE /* JWTHeader$$serializer.class */,
+				BC562FD02349A8F8003DACCE /* RainBarrel.class */,
+				BC562FD12349A8F8003DACCE /* Waterfall$switchMapDeferreds$$inlined$select$lambda$2$1.class */,
+				BC562FD22349A8F8003DACCE /* GoogleDrvImpl$deleteFile$1.class */,
+				BC562FD32349A8F8003DACCE /* AccessToken$Companion.class */,
+				BC562FD42349A8F8003DACCE /* AuthAssertion$$serializer.class */,
+				BC562FD52349A8F8003DACCE /* GoogleDrvApi$renameCloudFile$1.class */,
+				BC562FD62349A8F8003DACCE /* Waterfall$switchMapDeferreds$$inlined$select$lambda$2.class */,
+				BC562FD72349A8F8003DACCE /* GoogleOAuth$postAuthRequest$1.class */,
+				BC562FD82349A8F8003DACCE /* JWTClaims$Companion.class */,
+				BC562FD92349A8F8003DACCE /* RainBarrel$mDriveServiceObservable$1.class */,
+				BC562FDA2349A8F8003DACCE /* GoogleDrvImpl$createFolder$$inlined$request$1.class */,
+				BC562FDB2349A8F8003DACCE /* ListResponse$Companion.class */,
+				BC562FDC2349A8F8003DACCE /* CreateResponse$Companion.class */,
+				BC562FDD2349A8F8003DACCE /* JWTHeader$Companion.class */,
+				BC562FDE2349A8F8003DACCE /* GoogleDrvApi$renameCloudFile$1$renameTask$1.class */,
+				BC562FDF2349A8F8003DACCE /* RxWrapperKt.class */,
+				BC562FE02349A8F8003DACCE /* GoogleDrvApi$uploadToCloud$1$uploadTask$1.class */,
+				BC562FE12349A8F8003DACCE /* GoogleOAuth$httpClient$1.class */,
+				BC562FE22349A8F8003DACCE /* GoogleDrvApi$uploadToCloud$1.class */,
+				BC562FE32349A8F8003DACCE /* PlatformUtilsKt.class */,
+				BC562FE42349A8F8003DACCE /* CreateResponse$$serializer.class */,
+				BC562FE52349A8F8003DACCE /* AccessToken$$serializer.class */,
+				BC562FE62349A8F8003DACCE /* Waterfall$switchMapDeferreds$$inlined$select$lambda$2$2.class */,
+				BC562FE72349A8F8003DACCE /* DrvFile$$serializer.class */,
+				BC562FE82349A8F8003DACCE /* RainBarrel$readQueue$1.class */,
+				BC562FE92349A8F8003DACCE /* GoogleDrive$uploadToCloud$1.class */,
+				BC562FEA2349A8F8003DACCE /* GoogleDrvImpl$listFiles$1.class */,
+				BC562FEB2349A8F8003DACCE /* FixedBlockingQueue.class */,
+				BC562FEC2349A8F8003DACCE /* GoogleDrvApi$createOneDir$1$createJob$1.class */,
+				BC562FED2349A8F8003DACCE /* Waterfall$switchMapDeferreds$$inlined$select$lambda$1.class */,
+				BC562FEE2349A8F8003DACCE /* GoogleDrvApi$createOneDir$1$deleteJob$1.class */,
+				BC562FEF2349A8F8003DACCE /* GoogleDrvImpl$deleteFiles$1.class */,
+				BC562FF02349A8F8003DACCE /* GoogleOAuth$Companion.class */,
+				BC562FF12349A8F8003DACCE /* AuthAssertion.class */,
+				BC562FF22349A8F8003DACCE /* GoogleDrvImplKt.class */,
+				BC562FF32349A8F8003DACCE /* DrvFile.class */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BC562FF42349A8F8003DACCE /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				BC562FF52349A8F8003DACCE /* META-INF */,
+				BC562FF72349A8F8003DACCE /* com */,
+			);
+			path = debug;
+			sourceTree = "<group>";
+		};
+		BC562FF52349A8F8003DACCE /* META-INF */ = {
+			isa = PBXGroup;
+			children = (
+				BC562FF62349A8F8003DACCE /* SharedKotlin_debug.kotlin_module */,
+			);
+			path = "META-INF";
+			sourceTree = "<group>";
+		};
+		BC562FF72349A8F8003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC562FF82349A8F8003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC562FF82349A8F8003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC562FF92349A8F8003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC562FF92349A8F8003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC562FFA2349A8F8003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC562FFA2349A8F8003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC562FFB2349A8F8003DACCE /* JWTHeader.class */,
+				BC562FFC2349A8F8003DACCE /* Waterfall$start$3.class */,
+				BC562FFD2349A8F8003DACCE /* GoogleDrvImpl$listFiles$$inlined$request$1.class */,
+				BC562FFE2349A8F8003DACCE /* Waterfall$dumpToGoogleDrive$1.class */,
+				BC562FFF2349A8F8003DACCE /* UploadResponse$Companion.class */,
+				BC5630002349A8F8003DACCE /* GoogleDrive$Companion.class */,
+				BC5630012349A8F8003DACCE /* GoogleDrive$createOneDir$1.class */,
+				BC5630022349A8F8003DACCE /* DispatcherKt.class */,
+				BC5630032349A8F8003DACCE /* ListResponse$$serializer.class */,
+				BC5630042349A8F8003DACCE /* GoogleDrvApi$createOneDir$1.class */,
+				BC5630052349A8F8003DACCE /* GoogleOAuth$prepareAccessToken$1.class */,
+				BC5630062349A8F8003DACCE /* UploadResponse.class */,
+				BC5630072349A8F8003DACCE /* GoogleOAuth$httpClient$1$1.class */,
+				BC5630082349A8F8003DACCE /* CreateResponse.class */,
+				BC5630092349A8F8003DACCE /* RxWrapper.class */,
+				BC56300A2349A8F8003DACCE /* Waterfall$start$2.class */,
+				BC56300B2349A8F8003DACCE /* Waterfall$Companion.class */,
+				BC56300C2349A8F8003DACCE /* AccessToken.class */,
+				BC56300D2349A8F8003DACCE /* GoogleOAuth$postAuthRequest$$inlined$request$1.class */,
+				BC56300E2349A8F8003DACCE /* GoogleDrvImpl$createFolder$1.class */,
+				BC56300F2349A8F8003DACCE /* Waterfall$$special$$inlined$CoroutineExceptionHandler$1.class */,
+				BC5630102349A8F8003DACCE /* GoogleDrvImpl$rename$$inlined$request$1.class */,
+				BC5630112349A8F8003DACCE /* WaterfallEntry$start$1.class */,
+				BC5630122349A8F8003DACCE /* AndroidPlatformKt.class */,
+				BC5630132349A8F8003DACCE /* GoogleDrvImpl$rename$1.class */,
+				BC5630142349A8F8003DACCE /* DrvFile$Companion.class */,
+				BC5630152349A8F8003DACCE /* GoogleDrive.class */,
+				BC5630162349A8F8003DACCE /* ListResponse.class */,
+				BC5630172349A8F8003DACCE /* JWTClaims$$serializer.class */,
+				BC5630182349A8F8003DACCE /* AuthAssertion$Companion.class */,
+				BC5630192349A8F8003DACCE /* GoogleDrvImpl$uploadFile$1.class */,
+				BC56301A2349A8F8003DACCE /* GoogleDrvApi$Companion.class */,
+				BC56301B2349A8F8003DACCE /* GoogleDrvImpl.class */,
+				BC56301C2349A8F8003DACCE /* GoogleDrvApi.class */,
+				BC56301D2349A8F8003DACCE /* Waterfall.class */,
+				BC56301E2349A8F8003DACCE /* GoogleDrvImpl$uploadFile$$inlined$request$1.class */,
+				BC56301F2349A8F8003DACCE /* GoogleOAuth.class */,
+				BC5630202349A8F8003DACCE /* UploadResponse$$serializer.class */,
+				BC5630212349A8F8003DACCE /* GoogleDrvImpl$deleteFile$$inlined$request$1.class */,
+				BC5630222349A8F8003DACCE /* GoogleDrvImpl$Companion.class */,
+				BC5630232349A8F8003DACCE /* JWTClaims.class */,
+				BC5630242349A8F8003DACCE /* Waterfall$bufferChannelPumper$$inlined$select$lambda$2$2.class */,
+				BC5630252349A8F8003DACCE /* GoogleDrvImpl$httpClient$1$1.class */,
+				BC5630262349A8F8003DACCE /* GoogleDrvImpl$httpClient$1.class */,
+				BC5630272349A8F8003DACCE /* JWTHeader$$serializer.class */,
+				BC5630282349A8F8003DACCE /* GoogleDrvImpl$deleteFile$1.class */,
+				BC5630292349A8F8003DACCE /* AccessToken$Companion.class */,
+				BC56302A2349A8F8003DACCE /* CoruntineException.class */,
+				BC56302B2349A8F8003DACCE /* AuthAssertion$$serializer.class */,
+				BC56302C2349A8F8003DACCE /* GoogleDrvApi$renameCloudFile$1.class */,
+				BC56302D2349A8F8003DACCE /* Waterfall$bufferChannelPumper$$inlined$select$lambda$1.class */,
+				BC56302E2349A8F8003DACCE /* Waterfall$bufferChannelPumper$1.class */,
+				BC56302F2349A8F8003DACCE /* WaterfallEntry$inflow$1.class */,
+				BC5630302349A8F8003DACCE /* GoogleOAuth$postAuthRequest$1.class */,
+				BC5630312349A8F8003DACCE /* JWTClaims$Companion.class */,
+				BC5630322349A8F8003DACCE /* GoogleDrvImpl$createFolder$$inlined$request$1.class */,
+				BC5630332349A8F8003DACCE /* ListResponse$Companion.class */,
+				BC5630342349A8F8003DACCE /* CreateResponse$Companion.class */,
+				BC5630352349A8F8003DACCE /* JWTHeader$Companion.class */,
+				BC5630362349A8F8003DACCE /* GoogleDrvApi$renameCloudFile$1$renameTask$1.class */,
+				BC5630372349A8F8003DACCE /* RxWrapperKt.class */,
+				BC5630382349A8F8003DACCE /* GoogleDrvApi$uploadToCloud$1$uploadTask$1.class */,
+				BC5630392349A8F8003DACCE /* Waterfall$bufferChannelPumper$$inlined$select$lambda$2$1.class */,
+				BC56303A2349A8F8003DACCE /* GoogleOAuth$httpClient$1.class */,
+				BC56303B2349A8F8003DACCE /* GoogleDrvApi$uploadToCloud$1.class */,
+				BC56303C2349A8F8003DACCE /* PlatformUtilsKt.class */,
+				BC56303D2349A8F8003DACCE /* Waterfall$bufferChannelPumper$$inlined$select$lambda$2.class */,
+				BC56303E2349A8F8003DACCE /* CreateResponse$$serializer.class */,
+				BC56303F2349A8F8003DACCE /* WaterfallEntry.class */,
+				BC5630402349A8F8003DACCE /* AccessToken$$serializer.class */,
+				BC5630412349A8F8003DACCE /* DrvFile$$serializer.class */,
+				BC5630422349A8F8003DACCE /* WaterfallEntry$$special$$inlined$CoroutineExceptionHandler$1.class */,
+				BC5630432349A8F8003DACCE /* GoogleDrive$uploadToCloud$1.class */,
+				BC5630442349A8F8003DACCE /* GoogleDrvImpl$listFiles$1.class */,
+				BC5630452349A8F8003DACCE /* GoogleDrvApi$createOneDir$1$createJob$1.class */,
+				BC5630462349A8F8003DACCE /* GoogleDrvApi$createOneDir$1$deleteJob$1.class */,
+				BC5630472349A8F8003DACCE /* GoogleDrvImpl$deleteFiles$1.class */,
+				BC5630482349A8F8003DACCE /* WaterfallEntry$start$1$1.class */,
+				BC5630492349A8F8003DACCE /* GoogleOAuth$Companion.class */,
+				BC56304A2349A8F8003DACCE /* AuthAssertion.class */,
+				BC56304B2349A8F8003DACCE /* GoogleDrvImplKt.class */,
+				BC56304C2349A8F8003DACCE /* DrvFile.class */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BC56304D2349A8F8003DACCE /* outputs */ = {
+			isa = PBXGroup;
+			children = (
+				BC56304E2349A8F8003DACCE /* logs */,
+			);
+			path = outputs;
+			sourceTree = "<group>";
+		};
+		BC56304E2349A8F8003DACCE /* logs */ = {
+			isa = PBXGroup;
+			children = (
+				BC56304F2349A8F8003DACCE /* manifest-merger-debug-report.txt */,
+				BC5630502349A8F8003DACCE /* manifest-merger-release-report.txt */,
+			);
+			path = logs;
+			sourceTree = "<group>";
+		};
+		BC5630532349A8F8003DACCE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630542349A8F8003DACCE /* iosMain */,
+				BC56305F2349A8F8003DACCE /* commonMain */,
+				BC56306D2349A8F8003DACCE /* main */,
+				BC5630712349A8F8003DACCE /* androidMain */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BC5630542349A8F8003DACCE /* iosMain */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630552349A8F8003DACCE /* kotlin */,
+			);
+			path = iosMain;
+			sourceTree = "<group>";
+		};
+		BC5630552349A8F8003DACCE /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630562349A8F8003DACCE /* com */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		BC5630562349A8F8003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630572349A8F8003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC5630572349A8F8003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630582349A8F8003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC5630582349A8F8003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630592349A8F8003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC5630592349A8F8003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC56305A2349A8F8003DACCE /* GoogleDrvApi.kt */,
+				BC56305B2349A8F8003DACCE /* iosPlatform.kt */,
+				BC56305C2349A8F8003DACCE /* RxWrapper.kt */,
+				BC56305D2349A8F8003DACCE /* Dispatcher.kt */,
+				BC56305E2349A8F8003DACCE /* WaterfallEntry.kt */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BC56305F2349A8F8003DACCE /* commonMain */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630602349A8F8003DACCE /* kotlin */,
+			);
+			path = commonMain;
+			sourceTree = "<group>";
+		};
+		BC5630602349A8F8003DACCE /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630612349A8F8003DACCE /* com */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		BC5630612349A8F8003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630622349A8F8003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC5630622349A8F8003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630632349A8F8003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC5630632349A8F8003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630642349A8F8003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC5630642349A8F8003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630652349A8F8003DACCE /* Waterfall.kt */,
+				BC5630662349A8F8003DACCE /* GoogleDrvImpl.kt */,
+				BC5630672349A8F8003DACCE /* CoruntineException.kt */,
+				BC5630682349A8F8003DACCE /* RxWrapper.kt */,
+				BC5630692349A8F8003DACCE /* Dispatcher.kt */,
+				BC56306A2349A8F8003DACCE /* GoogleDrive.kt */,
+				BC56306B2349A8F8003DACCE /* GoogleOAuth.kt */,
+				BC56306C2349A8F8003DACCE /* PlatformUtils.kt */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BC56306D2349A8F8003DACCE /* main */ = {
+			isa = PBXGroup;
+			children = (
+				BC56306E2349A8F8003DACCE /* AndroidManifest.xml */,
+				BC56306F2349A8F8003DACCE /* assets */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		BC56306F2349A8F8003DACCE /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630702349A8F8003DACCE /* google_drive_credential.txt */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		BC5630712349A8F8003DACCE /* androidMain */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630722349A8F8003DACCE /* kotlin */,
+			);
+			path = androidMain;
+			sourceTree = "<group>";
+		};
+		BC5630722349A8F8003DACCE /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630732349A8F8003DACCE /* com */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		BC5630732349A8F8003DACCE /* com */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630742349A8F8003DACCE /* tubi */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		BC5630742349A8F8003DACCE /* tubi */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630752349A8F8003DACCE /* test */,
+			);
+			path = tubi;
+			sourceTree = "<group>";
+		};
+		BC5630752349A8F8003DACCE /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630762349A8F8003DACCE /* interceptor */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		BC5630762349A8F8003DACCE /* interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				BC5630772349A8F8003DACCE /* GoogleDrvApi.kt */,
+				BC5630782349A8F8003DACCE /* rxWrapper.kt */,
+				BC5630792349A8F8003DACCE /* Dispatcher.kt */,
+				BC56307A2349A8F8003DACCE /* androidPlatform.kt */,
+				BC56307B2349A8F8003DACCE /* WaterfallEntry.kt */,
+			);
+			path = interceptor;
+			sourceTree = "<group>";
+		};
+		BCFF34DA2343FDCA00A41309 = {
+			isa = PBXGroup;
+			children = (
+				BCFF353B23454A2700A41309 /* SharedSwift */,
+				BCFF34E52343FDCA00A41309 /* MPP_IOS */,
+				BCFF34FC2343FDCE00A41309 /* MPP_IOSTests */,
+				BCFF35072343FDCE00A41309 /* MPP_IOSUITests */,
+				BCFF34E42343FDCA00A41309 /* Products */,
+				BCFF3517234420EB00A41309 /* Frameworks */,
+				AEBFEC8FB8C4A164C1450E20 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BCFF34E42343FDCA00A41309 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF34E32343FDCA00A41309 /* MPP_IOS.app */,
+				BCFF34F92343FDCD00A41309 /* MPP_IOSTests.xctest */,
+				BCFF35042343FDCE00A41309 /* MPP_IOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCFF34E52343FDCA00A41309 /* MPP_IOS */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF34E62343FDCA00A41309 /* AppDelegate.swift */,
+				BCFF34E82343FDCA00A41309 /* SceneDelegate.swift */,
+				BCFF34EA2343FDCA00A41309 /* ContentView.swift */,
+				BCFF34EC2343FDCD00A41309 /* Assets.xcassets */,
+				BCFF34F12343FDCD00A41309 /* LaunchScreen.storyboard */,
+				BCFF34F42343FDCD00A41309 /* Info.plist */,
+				BCFF34EE2343FDCD00A41309 /* Preview Content */,
+			);
+			path = MPP_IOS;
+			sourceTree = "<group>";
+		};
+		BCFF34EE2343FDCD00A41309 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF34EF2343FDCD00A41309 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCFF34FC2343FDCE00A41309 /* MPP_IOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF34FD2343FDCE00A41309 /* MPP_IOSTests.swift */,
+				BCFF34FF2343FDCE00A41309 /* Info.plist */,
+			);
+			path = MPP_IOSTests;
+			sourceTree = "<group>";
+		};
+		BCFF35072343FDCE00A41309 /* MPP_IOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF35082343FDCE00A41309 /* MPP_IOSUITests.swift */,
+				BCFF350A2343FDCE00A41309 /* Info.plist */,
+			);
+			path = MPP_IOSUITests;
+			sourceTree = "<group>";
+		};
+		BCFF3517234420EB00A41309 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC562DEE2349A8F7003DACCE /* SharedKotlin */,
+				BCFF36672345C54E00A41309 /* debugFramework */,
+				13CEB0E0EE73DF3CCEE640EC /* Pods_MPP_IOS.framework */,
+				C1CDC904A9DFF854584E312A /* Pods_MPP_IOSTests.framework */,
+				854AA2C475CEEEF182CDA2AE /* Pods_MPP_IOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCFF353B23454A2700A41309 /* SharedSwift */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF353C23454A7C00A41309 /* TubiRxSwift.swift */,
+				BCFF353E2345A95200A41309 /* Main.swift */,
+				BCFF366A2345CB0500A41309 /* TubiIosPlatform.swift */,
+			);
+			path = SharedSwift;
+			sourceTree = "<group>";
+		};
+		BCFF36672345C54E00A41309 /* debugFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF36682345C54E00A41309 /* SharedKotlin.framework.dSYM */,
+				BCFF36692345C54E00A41309 /* SharedKotlin.framework */,
+			);
+			name = debugFramework;
+			path = ../MPP/SharedKotlin/build/bin/ios/debugFramework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCFF34E22343FDCA00A41309 /* MPP_IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFF350D2343FDCE00A41309 /* Build configuration list for PBXNativeTarget "MPP_IOS" */;
+			buildPhases = (
+				224FE28E14FAD281D9FD229F /* [CP] Check Pods Manifest.lock */,
+				BCFF35162343FF0900A41309 /* Run Script */,
+				BCFF34DF2343FDCA00A41309 /* Sources */,
+				BCFF34E02343FDCA00A41309 /* Frameworks */,
+				BCFF34E12343FDCA00A41309 /* Resources */,
+				13612E112729555D46D5931A /* [CP] Embed Pods Frameworks */,
+				BC56307E2349AB82003DACCE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MPP_IOS;
+			productName = MPP_IOS;
+			productReference = BCFF34E32343FDCA00A41309 /* MPP_IOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCFF34F82343FDCD00A41309 /* MPP_IOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFF35102343FDCE00A41309 /* Build configuration list for PBXNativeTarget "MPP_IOSTests" */;
+			buildPhases = (
+				9C148B50573342C2B0DBFA8B /* [CP] Check Pods Manifest.lock */,
+				BCFF34F52343FDCD00A41309 /* Sources */,
+				BCFF34F62343FDCD00A41309 /* Frameworks */,
+				BCFF34F72343FDCD00A41309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCFF34FB2343FDCD00A41309 /* PBXTargetDependency */,
+			);
+			name = MPP_IOSTests;
+			productName = MPP_IOSTests;
+			productReference = BCFF34F92343FDCD00A41309 /* MPP_IOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCFF35032343FDCE00A41309 /* MPP_IOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFF35132343FDCE00A41309 /* Build configuration list for PBXNativeTarget "MPP_IOSUITests" */;
+			buildPhases = (
+				95471FD39C08ECA37C918580 /* [CP] Check Pods Manifest.lock */,
+				BCFF35002343FDCE00A41309 /* Sources */,
+				BCFF35012343FDCE00A41309 /* Frameworks */,
+				BCFF35022343FDCE00A41309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCFF35062343FDCE00A41309 /* PBXTargetDependency */,
+			);
+			name = MPP_IOSUITests;
+			productName = MPP_IOSUITests;
+			productReference = BCFF35042343FDCE00A41309 /* MPP_IOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCFF34DB2343FDCA00A41309 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = mxue;
+				TargetAttributes = {
+					BCFF34E22343FDCA00A41309 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					BCFF34F82343FDCD00A41309 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = BCFF34E22343FDCA00A41309;
+					};
+					BCFF35032343FDCE00A41309 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = BCFF34E22343FDCA00A41309;
+					};
+				};
+			};
+			buildConfigurationList = BCFF34DE2343FDCA00A41309 /* Build configuration list for PBXProject "MPP_IOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCFF34DA2343FDCA00A41309;
+			productRefGroup = BCFF34E42343FDCA00A41309 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCFF34E22343FDCA00A41309 /* MPP_IOS */,
+				BCFF34F82343FDCD00A41309 /* MPP_IOSTests */,
+				BCFF35032343FDCE00A41309 /* MPP_IOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCFF34E12343FDCA00A41309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF34F32343FDCD00A41309 /* LaunchScreen.storyboard in Resources */,
+				BCFF34F02343FDCD00A41309 /* Preview Assets.xcassets in Resources */,
+				BCFF34ED2343FDCD00A41309 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF34F72343FDCD00A41309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF35022343FDCE00A41309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13612E112729555D46D5931A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MPP_IOS/Pods-MPP_IOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MPP_IOS/Pods-MPP_IOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MPP_IOS/Pods-MPP_IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		224FE28E14FAD281D9FD229F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPP_IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95471FD39C08ECA37C918580 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPP_IOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C148B50573342C2B0DBFA8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPP_IOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCFF35162343FF0900A41309 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/../MPP/gradlew\" -p \"$SRCROOT/../MPP\" buildFrameworkForXcode \\\n-Ptubi.preset.name=\"$KOTLIN_PRESET\" \\\n-Ptubi.configuration.name=\"$CONFIGURATION\" \\\n-Ptubi.framework.location=\"$CONFIGURATION_BUILD_DIR\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCFF34DF2343FDCA00A41309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF353F2345A95200A41309 /* Main.swift in Sources */,
+				BCFF34E72343FDCA00A41309 /* AppDelegate.swift in Sources */,
+				BCFF34E92343FDCA00A41309 /* SceneDelegate.swift in Sources */,
+				BCFF34EB2343FDCA00A41309 /* ContentView.swift in Sources */,
+				BCFF353D23454A7C00A41309 /* TubiRxSwift.swift in Sources */,
+				BCFF366B2345CB0500A41309 /* TubiIosPlatform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF34F52343FDCD00A41309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF34FE2343FDCE00A41309 /* MPP_IOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFF35002343FDCE00A41309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFF35092343FDCE00A41309 /* MPP_IOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCFF34FB2343FDCD00A41309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCFF34E22343FDCA00A41309 /* MPP_IOS */;
+			targetProxy = BCFF34FA2343FDCD00A41309 /* PBXContainerItemProxy */;
+		};
+		BCFF35062343FDCE00A41309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCFF34E22343FDCA00A41309 /* MPP_IOS */;
+			targetProxy = BCFF35052343FDCE00A41309 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCFF34F12343FDCD00A41309 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFF34F22343FDCD00A41309 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCFF350B2343FDCE00A41309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCFF350C2343FDCE00A41309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCFF350E2343FDCE00A41309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CDB1666AC889388893A641 /* Pods-MPP_IOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MPP_IOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 3RT6Z533P8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MPP_IOS/Info.plist;
+				KOTLIN_PRESET = "";
+				"KOTLIN_PRESET[sdk=iphoneos*]" = iosArm64;
+				"KOTLIN_PRESET[sdk=iphonesimulator*]" = iosX64;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tubi.MPP-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCFF350F2343FDCE00A41309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B074CFB18AE11AA4BB2FFC /* Pods-MPP_IOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MPP_IOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 3RT6Z533P8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MPP_IOS/Info.plist;
+				KOTLIN_PRESET = "";
+				"KOTLIN_PRESET[sdk=iphoneos*]" = iosArm64;
+				"KOTLIN_PRESET[sdk=iphonesimulator*]" = iosX64;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tubi.MPP-IOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCFF35112343FDCE00A41309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0367385121EF4294099A2D2 /* Pods-MPP_IOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RT6Z533P8;
+				INFOPLIST_FILE = MPP_IOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tubi.MPP-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MPP_IOS.app/MPP_IOS";
+			};
+			name = Debug;
+		};
+		BCFF35122343FDCE00A41309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00176471A593B84FABB1F07C /* Pods-MPP_IOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RT6Z533P8;
+				INFOPLIST_FILE = MPP_IOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tubi.MPP-IOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MPP_IOS.app/MPP_IOS";
+			};
+			name = Release;
+		};
+		BCFF35142343FDCE00A41309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3B2676AFD57C0E139F523E /* Pods-MPP_IOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RT6Z533P8;
+				INFOPLIST_FILE = MPP_IOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tubi.MPP-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MPP_IOS;
+			};
+			name = Debug;
+		};
+		BCFF35152343FDCE00A41309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBD4A86C9E46D71B8532BF9 /* Pods-MPP_IOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3RT6Z533P8;
+				INFOPLIST_FILE = MPP_IOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tubi.MPP-IOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MPP_IOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCFF34DE2343FDCA00A41309 /* Build configuration list for PBXProject "MPP_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF350B2343FDCE00A41309 /* Debug */,
+				BCFF350C2343FDCE00A41309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFF350D2343FDCE00A41309 /* Build configuration list for PBXNativeTarget "MPP_IOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF350E2343FDCE00A41309 /* Debug */,
+				BCFF350F2343FDCE00A41309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFF35102343FDCE00A41309 /* Build configuration list for PBXNativeTarget "MPP_IOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF35112343FDCE00A41309 /* Debug */,
+				BCFF35122343FDCE00A41309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFF35132343FDCE00A41309 /* Build configuration list for PBXNativeTarget "MPP_IOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFF35142343FDCE00A41309 /* Debug */,
+				BCFF35152343FDCE00A41309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCFF34DB2343FDCA00A41309 /* Project object */;
+}
